@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A single small hand-dabbed smudge of turmeric paste on paper, saturated golden yellow with darker drying edges and fingertip texture, with a tiny round vermilion kumkum dot pressed in its centre, seen from above. Isolated on a pure flat white background (#ffffff), centred, generous empty margin around it. Match the reference painting's style: delicate hand-painted watercolor and gouache, soft natural pigments, fine sepia ink linework where lines appear, visible paper grain. No text, no letters, no people, no lamps, no candles, no fire.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_c2e1080864e899d97d85f0dfe5529aee.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

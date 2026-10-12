@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-11T13:25:15.083Z",
+  "title": "Design System: Sai Girishma & Ravi · Engagement",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Ivory Rag Paper",
+        "canonical": "#fbf6ef",
+        "tonalRamp": [
+          "#3f3e3c",
+          "#716f6c",
+          "#a3a09b",
+          "#d5d1cb",
+          "#fcf8f3",
+          "#fdfbf7",
+          "#fefcfa",
+          "#fffefd"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f5ebe2",
+        "tonalRamp": [
+          "#3d3b39",
+          "#6e6a66",
+          "#9f9993",
+          "#d0c8c0",
+          "#f8f0e9",
+          "#faf5f1",
+          "#fcf9f6",
+          "#fefdfc"
+        ]
+      },
+      "mount": {
+        "role": "neutral",
+        "displayName": "Mount Ivory",
+        "canonical": "#fffaf3",
+        "tonalRamp": [
+          "#403e3d",
+          "#73706d",
+          "#a6a29e",
+          "#d9d5cf",
+          "#fffbf6",
+          "#fffcf9",
+          "#fffdfb",
+          "#fffefd"
+        ]
+      },
+      "blush": {
+        "role": "tertiary",
+        "displayName": "Blush",
+        "canonical": "#f2d6d0",
+        "tonalRamp": [
+          "#3d3634",
+          "#6d605e",
+          "#9d8b87",
+          "#ceb6b1",
+          "#f5e0dc",
+          "#f9ebe8",
+          "#fbf3f1",
+          "#fdfaf9"
+        ]
+      },
+      "blush-2": {
+        "role": "tertiary",
+        "displayName": "Deep Blush",
+        "canonical": "#e7b8b4",
+        "tonalRamp": [
+          "#3a2e2d",
+          "#685351",
+          "#967875",
+          "#c49c99",
+          "#edcac7",
+          "#f3dcda",
+          "#f8eae9",
+          "#fcf6f6"
+        ]
+      },
+      "peach": {
+        "role": "tertiary",
+        "displayName": "Peach",
+        "canonical": "#f7dcc5",
+        "tonalRamp": [
+          "#3e3731",
+          "#6f6359",
+          "#a18f80",
+          "#d2bba7",
+          "#f9e5d4",
+          "#fbeee2",
+          "#fdf5ee",
+          "#fefbf8"
+        ]
+      },
+      "wine": {
+        "role": "primary",
+        "displayName": "Wine Ink",
+        "canonical": "#6b1d2e",
+        "tonalRamp": [
+          "#1b070c",
+          "#300d15",
+          "#46131e",
+          "#5b1927",
+          "#905662",
+          "#b58e97",
+          "#d3bbc0",
+          "#ede4e6"
+        ]
+      },
+      "wine-2": {
+        "role": "primary",
+        "displayName": "Deep Wine",
+        "canonical": "#4f1220",
+        "tonalRamp": [
+          "#140508",
+          "#24080e",
+          "#330c15",
+          "#430f1b",
+          "#7b4d58",
+          "#a78990",
+          "#cab8bc",
+          "#eae3e4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#45272b",
+        "tonalRamp": [
+          "#110a0b",
+          "#1f1213",
+          "#2d191c",
+          "#3b2125",
+          "#745d60",
+          "#a29395",
+          "#c7bebf",
+          "#e9e5e6"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#77575a",
+        "tonalRamp": [
+          "#1e1617",
+          "#362729",
+          "#4d393b",
+          "#654a4d",
+          "#998183",
+          "#bbabad",
+          "#d6cdce",
+          "#efebeb"
+        ]
+      },
+      "gold": {
+        "role": "secondary",
+        "displayName": "Antique Gold",
+        "canonical": "#a0762f",
+        "tonalRamp": [
+          "#281e0c",
+          "#483515",
+          "#684d1f",
+          "#886428",
+          "#b89863",
+          "#d0bb97",
+          "#e3d6c1",
+          "#f4efe6"
+        ]
+      },
+      "gold-text": {
+        "role": "secondary",
+        "displayName": "Gold Ink",
+        "canonical": "#86621f",
+        "tonalRamp": [
+          "#221908",
+          "#3c2c0e",
+          "#574014",
+          "#72531a",
+          "#a48957",
+          "#c3b18f",
+          "#dbd0bc",
+          "#f0ece4"
+        ]
+      },
+      "gold-soft": {
+        "role": "secondary",
+        "displayName": "Gold Leaf Soft",
+        "canonical": "#dcc08a",
+        "tonalRamp": [
+          "#373023",
+          "#63563e",
+          "#8f7d5a",
+          "#bba375",
+          "#e5d0a7",
+          "#eee0c5",
+          "#f5ecdc",
+          "#fbf7f1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Script Display",
+        "purpose": "Couple names and section titles in Rouge Script, wine."
+      },
+      "headline": {
+        "displayName": "Script Headline",
+        "purpose": "Story chapter titles and in-section script headings."
+      },
+      "title": {
+        "displayName": "Italic Quote",
+        "purpose": "Family quotes between sections, wine italic serif."
+      },
+      "body": {
+        "displayName": "Reading Serif",
+        "purpose": "All reading text in Tiro Telugu, English and Telugu."
+      },
+      "label": {
+        "displayName": "Inscriptional Capitals",
+        "purpose": "Dates, form labels, muhurtham fields, countdown units; gold-text or wine."
+      },
+      "telugu-display": {
+        "displayName": "Telugu Display",
+        "purpose": "Sirivennela for the Telugu invitation title and muhurtham heading only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "laid-card",
+        "value": "0 1px 2px rgb(107 29 46 / 0.06), 0 24px 48px -28px rgb(107 29 46 / 0.35)",
+        "purpose": "Cards laid on the paper."
+      },
+      {
+        "name": "framed-mount",
+        "value": "0 24px 44px -26px rgb(107 29 46 / 0.55)",
+        "purpose": "Arch and venue photo frames, scratch arch."
+      },
+      {
+        "name": "loose-print",
+        "value": "0 18px 34px -18px rgb(79 18 32 / 0.55)",
+        "purpose": "Gallery prints in the deck."
+      },
+      {
+        "name": "wine-button",
+        "value": "0 10px 22px -12px rgb(79 18 32 / 0.8)",
+        "purpose": "Wine buttons and the floating music button."
+      },
+      {
+        "name": "lettering-halo",
+        "value": "text-shadow: 0 0 14px rgb(251 246 239 / 0.85), 0 0 2px rgb(251 246 239 / 0.6)",
+        "purpose": "Hero lettering over painted sky only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Arrivals: blooms, card rise, seal lift."
+      },
+      {
+        "name": "ease-soft",
+        "value": "cubic-bezier(0.33, 1, 0.68, 1)",
+        "purpose": "Envelope flap rotation (950ms)."
+      },
+      {
+        "name": "bloom-scroll",
+        "value": "opacity 0 to 1, blur 6px to 0, translateY 16px and scale .985 to none; animation-timeline: view(); range entry 0% to 60%",
+        "purpose": "Sections spreading in like a wash; only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "bloom-first",
+        "value": "1600ms ease-out, blur 8px, scale 1.03; late variant delayed 300ms",
+        "purpose": "Hero blooming in on first envelope open."
+      },
+      {
+        "name": "seal-breathe",
+        "value": "scale 1 to 1.045, 2.8s ease-in-out infinite",
+        "purpose": "Idle wax seal inviting a tap."
+      },
+      {
+        "name": "drift",
+        "value": "translateY 0 to 6px, opacity .55 to 1, 2.8s cubic-bezier(0.45, 0, 0.55, 1) infinite",
+        "purpose": "Scroll cue settling like a petal; never a bounce."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition durations 0.01ms; petal canvas never starts; smooth scroll off",
+        "purpose": "Global reduced-motion floor."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "hero-landscape",
+        "value": "(min-width: 768px) and (orientation: landscape)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Wine Button",
+      "kind": "button",
+      "refersTo": "button-wine",
+      "description": "Primary action: save the date, reply on WhatsApp.",
+      "html": "<button class=\"ds-btn ds-btn-wine\">Add to calendar</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.7rem 1.5rem;border-radius:999px;font-family:\"Castoro Titling\",serif;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:background-color 200ms,color 200ms,border-color 200ms,transform 120ms;}.ds-btn:active{transform:translateY(1px) scale(.99);}.ds-btn:focus-visible{outline:2px solid #6b1d2e;outline-offset:3px;}.ds-btn-wine{background:#6b1d2e;color:#fff8f3;border:none;box-shadow:0 10px 22px -12px rgb(79 18 32 / .8);}.ds-btn-wine:hover{background:#4f1220;}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action and square icon buttons.",
+      "html": "<button class=\"ds-btn ds-btn-line\">Directions</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.7rem 1.5rem;border-radius:999px;font-family:\"Castoro Titling\",serif;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:background-color 200ms,color 200ms,border-color 200ms,transform 120ms;}.ds-btn:active{transform:translateY(1px) scale(.99);}.ds-btn:focus-visible{outline:2px solid #6b1d2e;outline-offset:3px;}.ds-btn-line{border:1px solid rgb(107 29 46 / .55);color:#6b1d2e;background:rgb(255 252 248 / .6);}.ds-btn-line:hover{border-color:#6b1d2e;background:#fffdf9;}"
+    },
+    {
+      "name": "Caps Link",
+      "kind": "custom",
+      "description": "Spaced-capital text link with a gold underline.",
+      "html": "<a class=\"ds-link-caps\" href=\"#\">Reveal without scratching</a>",
+      "css": ".ds-link-caps{font-family:\"Castoro Titling\",serif;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:#6b1d2e;text-decoration:underline;text-decoration-color:rgb(160 118 47 / .7);text-underline-offset:.55em;min-height:44px;display:inline-flex;align-items:center;}.ds-link-caps:hover{text-decoration-color:#6b1d2e;}.ds-link-caps:focus-visible{outline:2px solid #6b1d2e;outline-offset:3px;border-radius:4px;}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "RSVP text and number inputs with a capitals label.",
+      "html": "<label class=\"ds-label\">Your name<input class=\"ds-field\" placeholder=\"Name\"></label>",
+      "css": ".ds-label{display:block;font-family:\"Castoro Titling\",serif;font-size:.76rem;letter-spacing:.3em;text-transform:uppercase;color:#6b1d2e;}.ds-field{display:block;margin-top:.5rem;width:100%;min-height:52px;padding:.75rem 1rem;font-family:\"Tiro Telugu\",serif;font-size:1.125rem;color:#45272b;background:rgb(255 253 249 / .85);border:1px solid rgb(107 29 46 / .55);border-radius:10px;transition:border-color 200ms,box-shadow 200ms;}.ds-field:hover{border-color:rgb(107 29 46 / .75);}.ds-field:focus{outline:none;border-color:#6b1d2e;box-shadow:0 0 0 4px rgb(231 184 180 / .55);}"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Paper card with an inner gold hairline, like a printed card.",
+      "html": "<div class=\"ds-card\"><p class=\"ds-caps\">Friday</p><p class=\"ds-script\">20</p><p class=\"ds-caps\">November 2026</p></div>",
+      "css": ".ds-card{position:relative;padding:2.5rem 2rem;text-align:center;background:rgb(253 249 243 / .92);border-radius:6px;box-shadow:0 1px 2px rgb(107 29 46 / .06),0 24px 48px -28px rgb(107 29 46 / .35);}.ds-card::after{content:\"\";position:absolute;inset:9px;border:1px solid rgb(160 118 47 / .45);border-radius:3px;pointer-events:none;}.ds-caps{font-family:\"Castoro Titling\",serif;text-transform:uppercase;letter-spacing:.3em;font-size:.8rem;color:#86621f;margin:0;}.ds-script{font-family:\"Rouge Script\",cursive;color:#6b1d2e;font-size:4rem;line-height:1.05;margin:0;}"
+    },
+    {
+      "name": "Arch Frame",
+      "kind": "custom",
+      "description": "Mandapam arch photo frame with an inner arch window.",
+      "html": "<div class=\"ds-arch-frame\"><div class=\"ds-arch-inner\"></div></div>",
+      "css": ".ds-arch-frame{width:12rem;aspect-ratio:3/4;padding:7px;background:#fffaf3;border:1px solid rgb(160 118 47 / .6);border-radius:9999px 9999px 6px 6px;box-shadow:0 24px 44px -26px rgb(107 29 46 / .6);}.ds-arch-inner{width:100%;height:100%;border-radius:9999px 9999px 6px 6px;background:linear-gradient(#f2d6d0,#f7dcc5);}"
+    },
+    {
+      "name": "Section Title",
+      "kind": "custom",
+      "description": "Script title, gold hairline (a painted sprig in the build), italic soft-ink subtitle. No eyebrow.",
+      "html": "<div class=\"ds-title\"><h2>Our Story</h2><div class=\"ds-rule\"></div><p>A subtitle in the family's words.</p></div>",
+      "css": ".ds-title{text-align:center;}.ds-title h2{font-family:\"Rouge Script\",cursive;font-weight:400;color:#6b1d2e;font-size:4.2rem;line-height:1.05;margin:0;}.ds-rule{height:1px;width:8rem;margin:.5rem auto 0;background:linear-gradient(90deg,transparent,#a0762f 20%,#dcc08a 50%,#a0762f 80%,transparent);}.ds-title p{font-family:\"Tiro Telugu\",serif;font-style:italic;color:#77575a;font-size:1.15rem;max-width:28ch;margin:1rem auto 0;}"
+    },
+    {
+      "name": "Language Toggle",
+      "kind": "chip",
+      "description": "Bilingual pill toggle: English in capitals, Telugu in serif.",
+      "html": "<div class=\"ds-toggle\"><button class=\"ds-tog ds-on\">English</button><button class=\"ds-tog ds-te\" lang=\"te\">తెలుగు</button></div>",
+      "css": ".ds-toggle{display:inline-flex;padding:4px;border:1px solid rgb(107 29 46 / .2);border-radius:999px;background:rgb(251 246 239 / .7);}.ds-tog{min-height:44px;min-width:96px;padding:0 1rem;border:none;border-radius:999px;background:transparent;color:#6b1d2e;font-family:\"Castoro Titling\",serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:background-color 200ms,color 200ms;}.ds-te{font-family:\"Tiro Telugu\",serif;font-size:1.05rem;letter-spacing:0;text-transform:none;}.ds-on{background:#6b1d2e;color:#fff8f3;}.ds-tog:focus-visible{outline:2px solid #6b1d2e;outline-offset:3px;}"
+    },
+    {
+      "name": "Music Button",
+      "kind": "button",
+      "refersTo": "music-button",
+      "description": "Floating round music toggle, off by default.",
+      "html": "<button class=\"ds-music\" aria-label=\"Play music\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 18.5V6.2l10-2.2v12.2 M9 18.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M19 16.2a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M9 9.6l10-2.2\"/></svg></button>",
+      "css": ".ds-music{display:grid;place-items:center;width:48px;height:48px;border:none;border-radius:999px;background:#6b1d2e;color:#dcc08a;box-shadow:0 10px 24px -10px rgb(79 18 32 / .8);cursor:pointer;transition:transform 200ms;}.ds-music:hover{transform:scale(1.05);}.ds-music:active{transform:scale(.95);}.ds-music:focus-visible{outline:2px solid #6b1d2e;outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Painted Telugu Morning",
+    "overview": "The invitation is a watercolor keepsake on ivory cold-press paper. Blush and peach washes bleed under each section and fade out at both edges; wine-ink script carries the names and section titles; widely spaced inscriptional capitals carry facts; antique-gold hairlines frame things the way a printed patrika would. Hand-painted mango leaves, marigold, jasmine and rose sit at corners and between sections. The couple's real photographs live inside the paintings, vignetted into painted ovals and paths.\n\nThe page is a single tall scroll for a phone held in one hand: generous vertical breathing room, one idea per section, centered compositions that go two-column only on wide screens. Every interaction is a physical gesture from a real invitation: break a wax seal, scratch gold leaf, turn a storybook page, flick through a pile of prints, catch falling petals.\n\nConfirmed rejections: deepam, diyas, lamps, candles and any flame motif, anywhere (the earlier \"Karthika Deepam\" build was removed); the interchangeable pastel template; the stiff e-card.",
+    "keyCharacteristics": [
+      "Ivory paper with a fine SVG grain under everything, including cards.",
+      "Wine is the only ink of authority; gold is a hairline, never a fill.",
+      "Script for names and titles, spaced capitals for facts, a warm serif for reading.",
+      "Painted art for settings, real photographs for people.",
+      "Motion blooms like a wash spreading; nothing bounces."
+    ],
+    "rules": [
+      {
+        "name": "The Wine-Is-the-Ink Rule",
+        "body": "Wine is the only saturated UI color. Turmeric and marigold belong to the paintings and the petals, not to buttons or text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold-Is-a-Line Rule",
+        "body": "Gold appears as 1px hairlines, frame borders and small spaced capitals. Never as a button fill or a large flat area (the scratch-off gold leaf is a painted texture, not a fill).",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinted-Shadow Rule",
+        "body": "Every shadow uses wine or deep wine at low alpha. No neutral grey or black shadows.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Script names and titles, capitals state facts, serif speaks. Never set paragraphs in script or capitals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Telugu-From-the-Brief Rule",
+        "body": "Telugu appears only where the family's content brief supplies it (blessing, invitation, muhurtham terms, venue line, compliments), always with `lang=\"te\"`. Never machine-translate new Telugu copy.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Date Rule",
+        "body": "Countdown digits and gallery counters use lining, tabular numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bleed, Never Band Rule",
+        "body": "Washes extend past their section and fade out top and bottom through a mask; a wash never ends in a visible edge.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Isolation Wash Rule",
+        "body": "Wash sections must not create a stacking context (no `isolation`, no z-index on the section). The wash sits in the page's root layer so painted art can multiply into it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set real photographs for every personal moment and painted art for settings, florals, seals and materials.",
+      "Do export painted cut-outs (florals, sprigs, seal, thread, thambulam, dabs) as transparent RGBA PNGs. Multiply blending fails inside animated or transformed wrappers, so alpha must carry the cut-out; multiply is reserved for full-bleed scenes laid on the root-layer wash.",
+      "Do generate new painted assets through `scripts/kie.mjs` with a prompt file in `scripts/prompts/`, then convert to alpha before committing.",
+      "Do keep wash sections free of `isolation` and section-level z-index.",
+      "Do bloom sections in on scroll (opacity, 6px blur, 16px rise) via `animation-timeline: view()`, only under `prefers-reduced-motion: no-preference`; the global reduced-motion rule collapses every animation and transition.",
+      "Do use the two easings: `cubic-bezier(0.16, 1, 0.3, 1)` for arrivals and `cubic-bezier(0.33, 1, 0.68, 1)` for the envelope flap.",
+      "Do give every control a 44-48px target, a 2px wine focus ring at 3px offset, and a non-gesture alternative (scratch has a button, the deck and story have buttons).",
+      "Do mark Telugu with `lang=\"te\"` and decorative art with empty alt and `aria-hidden`; describe paintings in alt text as watercolors."
+    ],
+    "donts": [
+      "Don't use deepam, diyas, lamps, candles, flames or glowing light motifs in art, icons or copy.",
+      "Don't add Telugu text the family's brief did not supply.",
+      "Don't fabricate traditional-dress portraits, family photos or venue photos in paint or AI imagery.",
+      "Don't let washes end in a hard band, or run petals over reading text after the hero.",
+      "Don't fill large areas with gold or use grey/black shadows.",
+      "Don't add eyebrow labels above section titles; a section opens with its script title and a painted sprig.",
+      "Don't bounce. Cues drift like a falling petal."
+    ]
+  }
+}

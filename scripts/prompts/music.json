@@ -1,0 +1,12 @@
+{
+  "model": "ai-music-api/generate",
+  "input": {
+    "custom_mode": true,
+    "instrumental": true,
+    "model": "V6",
+    "title": "Karthika Morning",
+    "style": "Gentle South Indian Carnatic instrumental for an auspicious family morning. Veena melody leads, soft bansuri flute answers, warm tanpura drone underneath, very light mridangam, slow and serene around 68 bpm, intimate, graceful, joyful but calm, suitable as quiet background music for a Telugu engagement invitation.",
+    "negative_tags": "vocals, singing, humming, choir, EDM, trap, heavy drums, synth bass, distortion, cinematic trailer, loud",
+    "duration": 150
+  }
+}

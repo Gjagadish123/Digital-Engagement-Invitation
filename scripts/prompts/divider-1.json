@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A small, delicate horizontal sprig for an invitation divider: two glossy mango leaves meeting at the centre with a tiny cluster of white jasmine buds and one small orange marigold, symmetrical and slender, centred, painted in watercolor. Isolated on a pure flat white background (#ffffff) with wide empty space on both sides. Match the reference painting's style: delicate hand-painted watercolor and gouache, soft natural pigments, fine sepia ink linework where lines appear, visible paper grain. No text, no letters, no people, no lamps, no candles, no fire.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_c2e1080864e899d97d85f0dfe5529aee.png"
+    ],
+    "aspect_ratio": "4:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

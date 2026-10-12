@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "One large, loose, very pale watercolor wash bloom in warm peach and faint golden apricot with a whisper of sage at one edge, natural granulation, its edges feathering softly into pure white paper; lots of white paper around it, nothing else. Match the reference painting's style: delicate hand-painted watercolor and gouache, soft natural pigments, fine sepia ink linework where lines appear, visible paper grain. No text, no letters, no people, no lamps, no candles, no fire.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_c2e1080864e899d97d85f0dfe5529aee.png"
+    ],
+    "aspect_ratio": "3:2",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

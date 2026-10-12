@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A single corner spray of South Indian wedding flowers for the top-left corner of an invitation card: glossy mango leaves, strings of white jasmine buds, orange and golden marigolds, blush roses with buds and a few tiny leaves, flowing from the top-left corner diagonally toward the middle, loose and elegant with some petals drifting. Everything else is completely empty pure white background (#ffffff), no paper texture outside the flowers. Match the reference painting's exact style: delicate hand-painted watercolor on textured cold-press ivory paper, soft blush-pink, peach and warm cream washes with gentle blooms, fine sepia ink linework, subtle antique-gold highlights, airy and romantic luxury Indian wedding invitation artwork, soft diffuse daylight. No people, no text, no letters, no lamps, no candles, no diyas, no fire, no street lights.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_c2e1080864e899d97d85f0dfe5529aee.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

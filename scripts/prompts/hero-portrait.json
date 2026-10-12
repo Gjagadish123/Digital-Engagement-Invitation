@@ -1,0 +1,9 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "A South Indian Telugu wedding entrance seen straight on, symmetrical: a graceful ivory stone archway framed by two slender carved pillars; a lush mango-leaf toranam strung across the top of the arch with hanging strands of orange and golden marigolds and white jasmine; tall young banana plants tied to both pillars; terracotta pots of blush roses and jasmine at their base; a delicate white rangoli (muggu) of dots and loops on the floor in front; through the arch a softly blurred garden path fading into a pale blush sky. The entire upper-middle area under and above the arch is open, pale, quiet empty paper to leave room for lettering. Delicate hand-painted watercolor illustration on textured cold-press ivory paper, soft blush-pink, peach and warm cream washes with gentle blooms and visible paper grain, fine sepia ink linework, subtle antique-gold leaf highlights, airy, romantic, luxury Indian wedding invitation artwork, soft diffuse morning daylight. No people, no text, no letters, no lamps, no candles, no diyas, no fire.",
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

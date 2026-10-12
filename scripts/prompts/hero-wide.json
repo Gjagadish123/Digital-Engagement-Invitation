@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Recompose the reference scene as a wide landscape banner for a desktop screen: one broad, generous ivory archway whose opening spans the middle 55 percent of the image width and most of its height, the same mango-leaf toranam with marigold and jasmine strands swagged across the top of the arch, banana plants tied to the two pillars at the far left and right of the arch, terracotta pots of blush roses at their base, a delicate white rangoli on the floor in front, a soft garden path fading into a pale blush sky through the arch. The whole inside of the arch is open, pale, quiet empty paper for lettering. Match the reference painting's exact style: delicate hand-painted watercolor on textured cold-press ivory paper, soft blush-pink, peach and warm cream washes, fine sepia ink linework, subtle antique-gold highlights, airy, romantic, luxury Indian wedding invitation artwork. No people, no text, no letters, no lamps, no candles, no diyas, no fire.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_c2e1080864e899d97d85f0dfe5529aee.png"
+    ],
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "Top-down studio photograph of a single deep maroon (wine red) wax seal with soft irregular poured edges and a slightly glossy surface, centered. Pressed into it: an elegant monogram of the two capital letters S and R in a classic high-contrast serif, the letters gracefully intertwined, encircled by a thin ring of tiny embossed mango leaves. Crisp detail, realistic wax texture with small highlights and subtle shadow. Isolated on a pure flat white background, nothing else in the image.",
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

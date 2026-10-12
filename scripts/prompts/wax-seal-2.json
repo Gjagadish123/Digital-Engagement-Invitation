@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "Same deep wine-red wax seal and shape as the reference, but the monogram S R and the ring of tiny leaves are pressed INTO the wax in relief: the same wine color as the wax, shaped only by soft light and shadow, a realistic debossed stamp impression. No white, no gold, no paint fill in the letters. Glossy realistic wax, top-down, centered, isolated on a pure white background.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_dc807e75b262fd6b0084b75ab74a4216.png"
+    ],
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A traditional Telugu engagement setting: an ornate wedding mandapam canopy with carved ivory pillars, draped with marigold and jasmine garlands and a mango-leaf toranam, banana plants tied at the pillars, rose petals scattered on the floor, a brass plate with betel leaves, bananas and flowers resting at the front. Leave a large soft pale oval of nearly empty paper in the center of the image (about half the width), where a photograph will later be placed; the scene frames that oval around its edges. Match the reference painting's exact style: delicate hand-painted watercolor on textured cold-press ivory paper, soft blush-pink, peach and warm cream washes with gentle blooms, fine sepia ink linework, subtle antique-gold highlights, airy and romantic luxury Indian wedding invitation artwork, soft diffuse daylight. No people, no text, no letters, no lamps, no candles, no diyas, no fire, no street lights.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_c2e1080864e899d97d85f0dfe5529aee.png"
+    ],
+    "aspect_ratio": "3:4",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

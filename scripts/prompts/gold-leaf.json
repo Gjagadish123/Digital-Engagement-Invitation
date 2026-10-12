@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A flat, evenly lit sheet of genuine gold leaf with a warm turmeric-gold tone, gently crinkled with soft burnished highlights, faint creases and tiny flakes at the texture level; the gold fills the entire frame edge to edge, no background visible, no border, no objects. Photographic detail.",
+    "image_input": [],
+    "aspect_ratio": "3:4",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

@@ -23,7 +23,7 @@ export const photos = {
   },
   "lantern-steps": {
     src: lanternSteps,
-    alt: "Under a woven lantern on a garden path at night, Ravi and Sai Girishma hold hands and smile at each other by a wooden railing.",
+    alt: "Beneath a woven cane shade on a garden path at night, Ravi and Sai Girishma hold hands and smile at each other by a wooden railing.",
   },
   "palm-garden": {
     src: palmGarden,

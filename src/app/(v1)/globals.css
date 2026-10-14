@@ -92,7 +92,7 @@
     inset: var(--wash-inset, -14% -12%);
     z-index: -1;
     pointer-events: none;
-    background-image: url("../assets/media/wash-blush.webp"), url("../assets/media/wash-peach.webp");
+    background-image: url("../../assets/media/wash-blush.webp"), url("../../assets/media/wash-peach.webp");
     background-repeat: no-repeat;
     background-size: var(--ws1, min(110%, 900px) auto), var(--ws2, min(95%, 780px) auto);
     background-position: var(--wx1, 0%) var(--wy1, 0%), var(--wx2, 100%) var(--wy2, 100%);
@@ -323,4 +323,4 @@ html[data-opened] .hero-copy, html[data-opening] .hero-copy { z-index: 61; }
 }
 
 /* envelope paper: painted rag paper with the faintest shading */
-.env-paper { background: url("../assets/media/paper.jpg") center / cover; }
+.env-paper { background: url("../../assets/media/paper.jpg") center / cover; }

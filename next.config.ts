@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   ...(pagesBasePath !== undefined && {
     output: "export",
     basePath: pagesBasePath,
+    // /v2/ is served as v2/index.html, so the address works with or without the slash
+    trailingSlash: true,
     // no image server on Pages: scripts/pages-images.mjs writes the widths this loader asks for
     images: { loader: "custom", loaderFile: "./src/lib/pages-image-loader.ts" },
   }),

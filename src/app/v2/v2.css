@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+/* v2: a hand-painted kalamkari cloth. Four natural dyes own whole fields; ecru is the undyed cotton. */
+
+@theme inline {
+  --color-madder: var(--madder);
+  --color-madder-deep: var(--madder-deep);
+  --color-indigo: var(--indigo);
+  --color-kasimi: var(--kasimi);
+  --color-myro: var(--myro);
+  --color-ecru: var(--ecru);
+  --color-ink: var(--ink);
+  --font-te: var(--nf-ramaraja), var(--nf-noto-te), serif;
+  --font-tet: var(--nf-noto-te), serif;
+  --font-serif: var(--nf-eczar), Georgia, serif;
+}
+
+@property --r1 { syntax: "<length>"; inherits: true; initial-value: 0px; }
+@property --r2 { syntax: "<length>"; inherits: true; initial-value: 0px; }
+@property --r3 { syntax: "<length>"; inherits: true; initial-value: 0px; }
+
+@layer base {
+  :root {
+    --madder: #8b2318;
+    --madder-deep: #5c140c;
+    --indigo: #1d2d52;
+    --kasimi: #1d1915;
+    --myro: #e3ae3c;
+    --ecru: #f0e3c6;
+    --ink: #1c1510;
+  }
+  html {
+    background: var(--kasimi);
+    color: var(--ecru);
+    scrollbar-color: var(--myro) var(--kasimi);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  ::selection { background: var(--myro); color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--myro); outline-offset: 3px; border-radius: 2px; }
+  input, textarea { caret-color: var(--madder); }
+  a { text-underline-offset: 0.22em; text-decoration-thickness: 1px; }
+  h1, h2, h3 { text-wrap: balance; }
+}
+
+@layer components {
+  /* grounds are real hand-woven cotton (Kie photographs made into seamless tiles by scripts/v2-cloth.mjs) */
+  .cloth { background-color: var(--dye, var(--madder)); background-size: 320px; background-repeat: repeat; }
+  .dye-madder { --myro: #f2c968; --dye: var(--madder); background-image: url("../../assets/v2/cloth-madder.webp"); color: var(--ecru); }
+  .dye-indigo { --dye: var(--indigo); background-image: url("../../assets/v2/cloth-indigo.webp"); color: var(--ecru); }
+  .dye-kasimi { --dye: var(--kasimi); background-image: url("../../assets/v2/cloth-kasimi.webp"); color: var(--ecru); }
+  .dye-ecru { --dye: var(--ecru); background-image: url("../../assets/v2/cloth-ecru.webp"); color: var(--ink); color-scheme: light; }
+  .dye-ecru :focus-visible { outline-color: var(--madder); }
+
+  .te { font-family: var(--font-tet); line-height: 1.95; }
+  .te-d { font-family: var(--font-te); line-height: 1.45; }
+  .numerals { font-variant-numeric: lining-nums tabular-nums; }
+  .caps { text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; font-size: 0.9375rem; }
+
+  /* the dotted seam between two registers of the cloth */
+  .seam {
+    height: 15px;
+    background:
+      radial-gradient(circle, var(--seam-dot, var(--myro)) 1.5px, transparent 2px) 0 50% / 10px 10px repeat-x,
+      linear-gradient(var(--seam-line, rgb(0 0 0 / 0.55)) 0 0) 0 0 / 100% 2px no-repeat,
+      linear-gradient(var(--seam-line, rgb(0 0 0 / 0.55)) 0 0) 0 100% / 100% 2px no-repeat;
+  }
+
+  /* a cartouche: the bordered block of writing inside a painted register (wider screens) */
+  @media (min-width: 768px) {
+    .cartouche { position: relative; padding: 2.25rem 2.25rem 2.5rem; border: 1.5px solid rgb(0 0 0 / 0.45); background: rgb(0 0 0 / 0.1); }
+    .cartouche::before { content: ""; position: absolute; inset: 6px; border: 1px dashed currentColor; opacity: 0.35; pointer-events: none; }
+    .dye-ecru .cartouche { background: rgb(139 35 24 / 0.05); border-color: rgb(28 21 16 / 0.5); }
+  }
+
+  /* the lotus-vine border cut from the painted cloth, wrapped around any panel or photograph */
+  .kframe {
+    border: var(--kf, 22px) solid transparent;
+    border-image: url("../../assets/v2/frame.webp") 80 round;
+  }
+
+  /* block-printed controls: a dyed tab with a printed inner rule */
+  .btn-k {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 3.25rem;
+    padding: 0.75rem 1.5rem;
+    font: 600 1.0625rem/1.2 var(--font-serif);
+    letter-spacing: 0.01em;
+    color: var(--ecru);
+    background: var(--madder);
+    border: 1.5px solid var(--ink);
+    border-radius: 3px;
+    box-shadow: 0 6px 14px -6px rgb(0 0 0 / 0.45);
+    transition: background-color 160ms ease, transform 120ms ease, box-shadow 160ms ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-k::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px dashed currentColor;
+    border-radius: 1px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .btn-k:hover { background: var(--madder-deep); }
+  .btn-k:active { transform: translateY(2px); box-shadow: 0 3px 8px -6px rgb(0 0 0 / 0.45); }
+  .btn-k:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+  .btn-k--ghost { background: transparent; color: inherit; border-color: currentColor; box-shadow: none; }
+  .btn-k--ghost:hover { background: rgb(240 227 198 / 0.1); }
+  .dye-ecru .btn-k--ghost:hover { background: rgb(28 21 16 / 0.07); }
+  .btn-k--myro { background: var(--myro); color: var(--ink); }
+  .btn-k--myro:hover { background: #f0bf55; }
+
+  /* two-way switch printed as a pair of tabs */
+  .tabs { display: inline-grid; grid-auto-flow: column; border: 1.5px solid var(--ink); border-radius: 3px; overflow: hidden; }
+  .tabs button {
+    min-height: 2.75rem;
+    padding: 0.4rem 1.2rem;
+    font: 600 1rem/1.2 var(--font-serif);
+    color: var(--ink);
+    background: transparent;
+    cursor: pointer;
+  }
+  .tabs button + button { border-left: 1.5px solid var(--ink); }
+  .tabs button[aria-pressed="true"] { background: var(--madder); color: var(--ecru); }
+  .tabs button:focus-visible { outline: 2px solid var(--madder); outline-offset: -5px; }
+  .tabs button[aria-pressed="true"]:focus-visible { outline-color: var(--ecru); }
+
+  .field-k {
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0.6rem 0.9rem;
+    font: 400 1.1875rem/1.3 var(--font-serif);
+    color: var(--ink);
+    background: rgb(255 250 238 / 0.55);
+    border: 1.5px solid var(--ink);
+    border-radius: 3px;
+  }
+  .field-k::placeholder { color: rgb(28 21 16 / 0.62); }
+  .field-k[aria-invalid="true"] { border-color: var(--madder); box-shadow: 0 0 0 2px rgb(139 35 24 / 0.25); }
+  .field-k:focus-visible { outline: 2px solid var(--madder); outline-offset: 2px; }
+
+  /* ---------- the dye ritual (hero) ---------- */
+  /* three wicking dye blots (scripts/v2-bloom.mjs) grow from the touch point at --x/--y */
+  .hero { --x: 50vw; --y: 40svh; }
+  .hero-dyed {
+    -webkit-mask-image: url("../../assets/v2/bloom-1.png"), url("../../assets/v2/bloom-2.png"), url("../../assets/v2/bloom-3.png");
+    mask-image: url("../../assets/v2/bloom-1.png"), url("../../assets/v2/bloom-2.png"), url("../../assets/v2/bloom-3.png");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: var(--r1) var(--r1), var(--r2) var(--r2), var(--r3) var(--r3);
+    mask-size: var(--r1) var(--r1), var(--r2) var(--r2), var(--r3) var(--r3);
+    -webkit-mask-position:
+      calc(var(--x) - var(--r1) / 2) calc(var(--y) - var(--r1) / 2),
+      calc(var(--x) + 9vmin - var(--r2) / 2) calc(var(--y) - 7vmin - var(--r2) / 2),
+      calc(var(--x) - 8vmin - var(--r3) / 2) calc(var(--y) + 10vmin - var(--r3) / 2);
+    mask-position:
+      calc(var(--x) - var(--r1) / 2) calc(var(--y) - var(--r1) / 2),
+      calc(var(--x) + 9vmin - var(--r2) / 2) calc(var(--y) - 7vmin - var(--r2) / 2),
+      calc(var(--x) - 8vmin - var(--r3) / 2) calc(var(--y) + 10vmin - var(--r3) / 2);
+  }
+  .hero[data-state="dyeing"] {
+    --r1: 420vmax;
+    --r2: 390vmax;
+    --r3: 400vmax;
+    /* dye soaks in slowly at the touch, then runs along the threads */
+    transition:
+      --r1 3s cubic-bezier(0.6, 0.05, 0.55, 0.95),
+      --r2 3.2s cubic-bezier(0.6, 0.05, 0.55, 0.95) 0.25s,
+      --r3 3.1s cubic-bezier(0.6, 0.05, 0.55, 0.95) 0.45s;
+  }
+  .hero[data-state="dyed"] .hero-dyed,
+  html[data-dyed] .hero-dyed { -webkit-mask-image: none; mask-image: none; }
+  .hero[data-state="dyed"] .hero-undyed,
+  html[data-dyed] .hero-undyed { display: none; }
+  .hero:not([data-state="dyed"]) .music-inline { pointer-events: none; }
+  html[data-dyed] .hero .music-inline { pointer-events: auto; }
+  .dye-cue { transition: opacity 500ms ease, visibility 0s; }
+  .hero:not([data-state="undyed"]) .dye-cue,
+  html[data-dyed] .dye-cue { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 500ms ease, visibility 0s 500ms; }
+
+  /* ---------- story panels take their dye as they come into view ---------- */
+  .panel { position: relative; display: block; }
+  .panel > img + img { position: absolute; inset: 0; }
+  @supports (animation-timeline: view()) {
+    .panel .panel-dyed {
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 240' preserveAspectRatio='none'%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='1.6'/%3E%3C/filter%3E%3Cpath filter='url(%23b)' d='M0 112 C 8 106, 15 117, 24 111 S 41 104, 50 112 S 67 119, 76 110 S 92 106, 100 113 V 240 H 0 Z'/%3E%3C/svg%3E");
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 240' preserveAspectRatio='none'%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='1.6'/%3E%3C/filter%3E%3Cpath filter='url(%23b)' d='M0 112 C 8 106, 15 117, 24 111 S 41 104, 50 112 S 67 119, 76 110 S 92 106, 100 113 V 240 H 0 Z'/%3E%3C/svg%3E");
+      -webkit-mask-size: 100% 240%;
+      mask-size: 100% 240%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      animation: dye-bath linear both;
+      animation-timeline: view();
+      animation-range: entry 35% cover 55%;
+    }
+  }
+  @keyframes dye-bath {
+    from { -webkit-mask-position: 0 0%; mask-position: 0 0%; }
+    to { -webkit-mask-position: 0 100%; mask-position: 0 100%; }
+  }
+
+  /* ---------- the reply stamp ---------- */
+  .stamp-press { animation: stamp 700ms cubic-bezier(0.16, 1, 0.3, 1) both; }
+  @keyframes stamp {
+    0% { transform: translateY(-40px) scale(1.35) rotate(-14deg); opacity: 0; }
+    55% { transform: translateY(0) scale(0.96) rotate(-7deg); opacity: 1; }
+    100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-dyed { -webkit-mask-image: none !important; mask-image: none !important; }
+  .hero-undyed, .dye-cue { display: none !important; }
+  .panel .panel-dyed { animation: none !important; -webkit-mask-image: none !important; mask-image: none !important; }
+  .stamp-press { animation: none !important; }
+  * { scroll-behavior: auto !important; }
+}

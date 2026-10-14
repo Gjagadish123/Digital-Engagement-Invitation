@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "Edit this exact kalamkari painting and keep everything else identical: the same composition, figures, poses, clothes, plates, garland, border, colours, line quality and cotton texture. Only these changes: remove every forehead mark from all three men (the two older men and the young man with glasses), leaving plain foreheads; remove the thin white thread that runs diagonally across the bare chest of the older man on the far left; and remove the small red scribble below the plate held by the older man on the right, filling it with his skin colour. No text, no letters, no lamps, no candles, no flames.",
+    "image_input": ["https://tempfile.aiquickdraw.com/workers/images/image_1488b41190671a41a890667ddbbd1bd6.png"],
+    "aspect_ratio": "4:5",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

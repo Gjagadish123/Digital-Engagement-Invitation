@@ -1,0 +1,12 @@
+{
+  "model": "ai-music-api/generate",
+  "input": {
+    "custom_mode": true,
+    "instrumental": true,
+    "model": "V6",
+    "title": "Kalam",
+    "style": "Intimate South Indian classical instrumental in raga Mohanam for a Telugu engagement morning. Opens with a solo veena alapana over a warm tanpura drone, then a bamboo flute joins in a tender call-and-answer duet, soft mridangam and a gentle ghatam enter in the second half, a light string section swells once near the end and settles back. Unhurried around 72 bpm, auspicious, tender, hopeful, handmade and acoustic, close-miked, warm room sound.",
+    "negative_tags": "vocals, singing, humming, choir, EDM, trap, synth, electronic drums, bass drop, distortion, trailer, epic, loud, pop",
+    "duration": 180
+  }
+}

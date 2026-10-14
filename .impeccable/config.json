@@ -39,6 +39,55 @@
         ],
         "createdAt": "2026-10-11T13:31:16.179Z",
         "reason": "Claude: mask-image gradient stop for the hero photo oval (alpha only)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "src/app/v2/**",
+          "src/components/v2/**"
+        ],
+        "createdAt": "2026-10-14T08:50:02.418Z",
+        "reason": "Claude: v2 (/v2) is its own kalamkari world built on the user's request for a second version; DESIGN.md documents v1, v2's system is recorded at finish"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "*",
+        "files": [
+          "src/app/v2/**",
+          "src/components/v2/**"
+        ],
+        "createdAt": "2026-10-14T08:50:02.649Z",
+        "reason": "Claude: v2 (/v2) is its own kalamkari world built on the user's request for a second version; DESIGN.md documents v1, v2's system is recorded at finish"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          "src/app/v2/**",
+          "src/components/v2/**"
+        ],
+        "createdAt": "2026-10-14T08:50:02.877Z",
+        "reason": "Claude: v2 (/v2) is its own kalamkari world built on the user's request for a second version; DESIGN.md documents v1, v2's system is recorded at finish"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          "src/app/v2/**",
+          "src/components/v2/**"
+        ],
+        "createdAt": "2026-10-14T08:50:03.107Z",
+        "reason": "Claude: v2 (/v2) is its own kalamkari world built on the user's request for a second version; DESIGN.md documents v1, v2's system is recorded at finish"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "src/app/v2/v2.css"
+        ],
+        "createdAt": "2026-10-14T09:24:02.019Z",
+        "reason": "Claude: .seam is a 15px-tall dotted border band (two rules and a row of dots), the kalamkari register seam, not a tiled grid field"
       }
     ]
   }

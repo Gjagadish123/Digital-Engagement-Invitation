@@ -1,8 +1,16 @@
 # Sai Girishma & Ravi · Engagement Invitation
 
-A watercolor digital invitation for the engagement on **Friday, 20 November 2026, muhurtham 09:34 AM IST**, Quality Inn Ramachandra, Duvvada, Visakhapatnam.
+A digital invitation for the engagement on **Friday, 20 November 2026, muhurtham 09:34 AM IST**, Quality Inn Ramachandra, Duvvada, Visakhapatnam. Two versions live side by side:
 
-Next.js 16 (App Router) · TypeScript · Tailwind CSS v4. Every page is prerendered static.
+- **v1** at `/`: the watercolor invitation (`src/app/(v1)/`, `src/components/*.tsx`).
+- **v2** at `/v2/`: the kalamkari cloth (`src/app/v2/`, `src/components/v2/`). Guests touch the undyed cloth to dye it, read the story as painted panels, and stamp their reply.
+
+Both read the same facts from `src/content/invitation.ts`. Next.js 16 (App Router) · TypeScript · Tailwind CSS v4. Every page is prerendered static.
+
+### v2 art and music
+
+- Paintings: `src/assets/v2/`, made with Kie.ai from `scripts/prompts/v2/*.json`. `scripts/prompts/v2/chosen.json` says which generation became which asset; `node scripts/v2-art.mjs scripts/prompts/v2/chosen.json` rebuilds them, including each `-line` twin (the same cloth before dyeing).
+- Music: `public/media/v2-kalam.mp3` (veena and flute in Mohanam, take 1 of 2; the other take is `tmp/kie/music-kalam/track-1.mp3` while that folder exists).
 
 ## Run it
 

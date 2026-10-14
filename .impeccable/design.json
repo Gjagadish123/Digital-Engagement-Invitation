@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-11T13:25:15.083Z",
+  "generatedAt": "2026-10-14T09:26:20.596Z",
   "title": "Design System: Sai Girishma & Ravi · Engagement",
   "extensions": {
     "colorMeta": {
@@ -198,6 +198,126 @@
           "#f5ecdc",
           "#fbf7f1"
         ]
+      },
+      "v2-madder": {
+        "role": "primary",
+        "displayName": "Madder Red",
+        "canonical": "#8b2318",
+        "tonalRamp": [
+          "#230906",
+          "#3f100b",
+          "#5a1710",
+          "#761e14",
+          "#ae655d",
+          "#c5918c",
+          "#dcbdba",
+          "#f1e5e3"
+        ]
+      },
+      "v2-madder-deep": {
+        "role": "primary",
+        "displayName": "Deep Madder",
+        "canonical": "#5c140c",
+        "tonalRamp": [
+          "#170503",
+          "#290905",
+          "#3c0d08",
+          "#4e110a",
+          "#8d5b55",
+          "#ae8a86",
+          "#ceb9b6",
+          "#ebe3e2"
+        ]
+      },
+      "v2-myro": {
+        "role": "secondary",
+        "displayName": "Myrobalan Yellow",
+        "canonical": "#e3ae3c",
+        "tonalRamp": [
+          "#392c0f",
+          "#664e1b",
+          "#947127",
+          "#c19433",
+          "#ebc677",
+          "#f1d79e",
+          "#f7e7c5",
+          "#fcf5e8"
+        ]
+      },
+      "v2-myro-on-madder": {
+        "role": "secondary",
+        "displayName": "Myrobalan on Madder",
+        "canonical": "#f2c968",
+        "tonalRamp": [
+          "#3d321a",
+          "#6d5a2f",
+          "#9d8344",
+          "#ceab58",
+          "#f6d995",
+          "#f9e4b4",
+          "#fbefd2",
+          "#fdf9ed"
+        ]
+      },
+      "v2-indigo": {
+        "role": "tertiary",
+        "displayName": "Indigo",
+        "canonical": "#1d2d52",
+        "tonalRamp": [
+          "#070b15",
+          "#0d1425",
+          "#131d35",
+          "#192646",
+          "#616c86",
+          "#8e96a9",
+          "#bbc0cb",
+          "#e4e6ea"
+        ]
+      },
+      "v2-kasimi": {
+        "role": "neutral",
+        "displayName": "Kasimi Black",
+        "canonical": "#1d1915",
+        "tonalRamp": [
+          "#070605",
+          "#0d0b09",
+          "#13100e",
+          "#191512",
+          "#615e5b",
+          "#8e8c8a",
+          "#bbbab9",
+          "#e4e3e3"
+        ]
+      },
+      "v2-ecru": {
+        "role": "neutral",
+        "displayName": "Undyed Ecru",
+        "canonical": "#f0e3c6",
+        "tonalRamp": [
+          "#3c3932",
+          "#6c6659",
+          "#9c9481",
+          "#ccc1a8",
+          "#f5ebd7",
+          "#f8f1e3",
+          "#fbf7ee",
+          "#fdfcf8"
+        ]
+      },
+      "v2-ink": {
+        "role": "neutral",
+        "displayName": "Kalam Ink",
+        "canonical": "#1c1510",
+        "tonalRamp": [
+          "#070504",
+          "#0d0907",
+          "#120e0a",
+          "#18120e",
+          "#605b58",
+          "#8e8a88",
+          "#bbb9b7",
+          "#e4e3e2"
+        ]
       }
     },
     "typographyMeta": {
@@ -224,6 +344,38 @@
       "telugu-display": {
         "displayName": "Telugu Display",
         "purpose": "Sirivennela for the Telugu invitation title and muhurtham heading only."
+      },
+      "v2-display-te": {
+        "displayName": "v2 Telugu Display",
+        "purpose": "Ramaraja section openers and the hero title; myro on dark fields, madder on ecru."
+      },
+      "v2-display": {
+        "displayName": "v2 Display",
+        "purpose": "Eczar 700 English-only section titles."
+      },
+      "v2-headline": {
+        "displayName": "v2 Headline",
+        "purpose": "Story chapter titles."
+      },
+      "v2-title": {
+        "displayName": "v2 Title",
+        "purpose": "English line beneath a Telugu heading; family names."
+      },
+      "v2-quote": {
+        "displayName": "v2 Quote",
+        "purpose": "Family quotes between registers, myro."
+      },
+      "v2-body": {
+        "displayName": "v2 Body",
+        "purpose": "Eczar reading text at 30-34ch."
+      },
+      "v2-body-te": {
+        "displayName": "v2 Telugu Body",
+        "purpose": "Noto Serif Telugu reading text, 1.95 line-height."
+      },
+      "v2-label": {
+        "displayName": "v2 Label",
+        "purpose": "Eczar 600 caps for dates, labels, captions."
       }
     },
     "shadows": [
@@ -299,7 +451,151 @@
         "name": "hero-landscape",
         "value": "(min-width: 768px) and (orientation: landscape)"
       }
-    ]
+    ],
+    "worlds": {
+      "v1": {
+        "route": "/",
+        "scope": [
+          "src/app/(v1)/**",
+          "src/components/*.tsx"
+        ],
+        "note": "Top-level narrative, shadows, motion, breakpoints and un-prefixed tokens/components belong to v1."
+      },
+      "v2": {
+        "route": "/v2",
+        "scope": [
+          "src/app/v2/**",
+          "src/components/v2/**",
+          "src/content/v2-art.ts",
+          "src/assets/v2/**"
+        ],
+        "tokenPrefix": "v2-",
+        "componentPrefix": "v2 · ",
+        "shadows": [
+          {
+            "name": "laid-painting",
+            "value": "0 18px 40px -20px rgb(0 0 0 / 0.65)",
+            "purpose": "Story paintings and the hero painting on phones."
+          },
+          {
+            "name": "printed-tab-lift",
+            "value": "0 6px 14px -6px rgb(0 0 0 / 0.45)",
+            "purpose": "Resting block-printed buttons; press moves 2px down and tightens."
+          },
+          {
+            "name": "seal",
+            "value": "0 10px 24px -10px rgb(0 0 0 / 0.8)",
+            "purpose": "Floating music seal."
+          }
+        ],
+        "motion": [
+          {
+            "name": "dye-bloom",
+            "value": "--r1/--r2/--r3 grow to ~400vmax over 3s, 3.2s (+0.25s), 3.1s (+0.45s) cubic-bezier(0.6, 0.05, 0.55, 0.95)",
+            "purpose": "Hero bloom masks wicking from the touch point."
+          },
+          {
+            "name": "dye-bath",
+            "value": "mask-position 0% to 100%, linear; animation-timeline: view(); range entry 35% cover 55%",
+            "purpose": "Story paintings dyed in by a rising wavy line on scroll."
+          },
+          {
+            "name": "stamp-press",
+            "value": "700ms cubic-bezier(0.16, 1, 0.3, 1): from translateY(-40px) scale(1.35) rotate(-14deg) to scale(1) rotate(-8deg)",
+            "purpose": "Reply seal pressed onto the cloth."
+          },
+          {
+            "name": "control",
+            "value": "background-color 160ms ease, transform 120ms ease",
+            "purpose": "Button hover and press."
+          },
+          {
+            "name": "reduced-motion",
+            "value": "masks removed, undyed faces and dye cue hidden, stamp static, smooth scroll off",
+            "purpose": "Everything shown already dyed."
+          }
+        ],
+        "breakpoints": [
+          {
+            "name": "sm",
+            "value": "640px"
+          },
+          {
+            "name": "md",
+            "value": "768px"
+          },
+          {
+            "name": "lg",
+            "value": "1024px"
+          }
+        ],
+        "narrative": {
+          "northStar": "The Dyed Temple Cloth",
+          "overview": "The invitation is one hand-painted Srikalahasti kalamkari cloth, read top to bottom in painted registers. Every section is a whole field of a natural dye laid over a real woven-cotton texture: madder red, indigo, kasimi iron-black, and undyed ecru, with myrobalan yellow as the lettering and accent dye. Registers are divided by dotted seams; panels and photographs are wrapped in a lotus-vine border cut from the painted cloth; paintings are iron-black kalam line over dye. The guest opens it by touching undyed cloth, and madder floods outward from the fingertip.\n\nDensity is that of a narrative textile: generous registers, one chapter per field, centered on phones and two-column (painting beside a cartouche of writing) from 768px. Telugu leads at display scale and English follows beneath it. Every control is block-printed: a dyed tab with a dashed inner rule, never a pill.\n\nConfirmed rejections: v1's cream-and-script wedding template, and its black-and-gold opposite. No lamp, diya or flame motif (project-wide).",
+          "keyCharacteristics": [
+            "Whole-viewport dye fields on real cotton tiles; dye changes only at a dotted seam.",
+            "Myrobalan yellow is the lettering dye on dark grounds; madder is the lettering dye on ecru.",
+            "Telugu display (Ramaraja) above a bold Eczar English line.",
+            "Lotus-vine border-image frames paintings, photographs, the map and the inscription.",
+            "Block-printed tabs with a dashed inner rule for every control; the reply is a stamped seal.",
+            "Dye motion: things take their colour (bloom from touch, dye-bath on scroll), they never slide or bounce."
+          ],
+          "rules": [
+            {
+              "name": "The Whole-Field Rule",
+              "body": "A dye owns a full-width section. Colour changes only at a seam or a cut border, never as a card or a band floating inside a field.",
+              "section": "colors"
+            },
+            {
+              "name": "The Cloth-Not-Flat Rule",
+              "body": "Every field is `.cloth` plus a `dye-*` class: the flat dye is only the fallback under a 320px seamless woven-cotton tile. No flat CSS colour field ships without its cloth.",
+              "section": "colors"
+            },
+            {
+              "name": "The Green-Is-Overdye Rule",
+              "body": "No green UI colour. Green exists only inside the paintings, as indigo over yellow.",
+              "section": "colors"
+            },
+            {
+              "name": "The Telugu-Leads Rule",
+              "body": "Where a heading is bilingual, Telugu is the display line and English follows at title scale beneath it, inside the same `h2`.",
+              "section": "typography"
+            },
+            {
+              "name": "The Two-Weights Rule",
+              "body": "Eczar runs at 400 for reading and 700 for headings, 600 only for labels, buttons and emphasised lines.",
+              "section": "typography"
+            },
+            {
+              "name": "The Tabular Count Rule",
+              "body": "The countdown and photo counter use lining, tabular numerals.",
+              "section": "typography"
+            },
+            {
+              "name": "The Seam Rule",
+              "body": "Registers join at a dotted seam (15px: two 2px dark rules with 3px myro dots every 10px). On ecru the dots turn madder; before dyeing they are ink.",
+              "section": "elevation"
+            }
+          ],
+          "dos": [
+            "Do lay every section as `.cloth` with one `dye-*` field and join fields with a `.seam` or a painted band.",
+            "Do ship every painting with its `-line` undyed twin generated by `scripts/v2-art.mjs`, so it can be dyed in.",
+            "Do frame paintings, photographs and inset panels with the lotus-vine `.kframe` (16-34px), never a CSS border.",
+            "Do set Telugu display headings in myro on dark fields and madder on ecru, with the English line beneath.",
+            "Do use the block-printed button (3px, 1.5px ink border, dashed inner rule) for every action; myro on indigo and kasimi, madder on ecru and madder fields.",
+            "Do give every control a 44px minimum target, a 2px myro focus ring at 3px offset (madder on ecru), and a non-gesture route (the dye cue is a button; the hero also dyes on scroll).",
+            "Do let colour arrive as dye: masks that grow or rise, `cubic-bezier(0.6, 0.05, 0.55, 0.95)` for the bloom and `cubic-bezier(0.16, 1, 0.3, 1)` for the stamp; reduced motion shows everything already dyed."
+          ],
+          "donts": [
+            "Don't use pills, rounded cards, or v1's script faces, wine, blush or gold hairlines in v2.",
+            "Don't introduce green, grey or any colour outside the four dyes, ecru and ink in UI.",
+            "Don't put a colour change anywhere but a seam or a cut border.",
+            "Don't slide, fade-up or bounce content in; the only entrances are dyeing and the stamp press.",
+            "Don't set the English line above or larger than its Telugu heading."
+          ]
+        }
+      }
+    }
   },
   "components": [
     {
@@ -369,6 +665,68 @@
       "description": "Floating round music toggle, off by default.",
       "html": "<button class=\"ds-music\" aria-label=\"Play music\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 18.5V6.2l10-2.2v12.2 M9 18.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M19 16.2a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M9 9.6l10-2.2\"/></svg></button>",
       "css": ".ds-music{display:grid;place-items:center;width:48px;height:48px;border:none;border-radius:999px;background:#6b1d2e;color:#dcc08a;box-shadow:0 10px 24px -10px rgb(79 18 32 / .8);cursor:pointer;transition:transform 200ms;}.ds-music:hover{transform:scale(1.05);}.ds-music:active{transform:scale(.95);}.ds-music:focus-visible{outline:2px solid #6b1d2e;outline-offset:3px;}"
+    },
+    {
+      "name": "v2 · Madder Button",
+      "kind": "button",
+      "refersTo": "v2-button-madder",
+      "description": "Block-printed primary action: calendar, WhatsApp send.",
+      "html": "<button class=\"ds-k\">Add to Google Calendar</button>",
+      "css": ".ds-k{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.75rem 1.5rem;font:600 1.0625rem/1.2 Eczar,Georgia,serif;letter-spacing:.01em;color:#f0e3c6;background:#8b2318;border:1.5px solid #1c1510;border-radius:3px;box-shadow:0 6px 14px -6px rgb(0 0 0/.45);cursor:pointer;transition:background-color 160ms ease,transform 120ms ease;}.ds-k::before{content:\"\";position:absolute;inset:4px;border:1px dashed currentColor;border-radius:1px;opacity:.5;pointer-events:none;}.ds-k:hover{background:#5c140c;}.ds-k:active{transform:translateY(2px);}.ds-k:focus-visible{outline:2px solid #e3ae3c;outline-offset:3px;}"
+    },
+    {
+      "name": "v2 · Myro Button",
+      "kind": "button",
+      "refersTo": "v2-button-myro",
+      "description": "Yellow block-printed action on indigo and kasimi fields.",
+      "html": "<div style=\"background:#1d2d52;padding:24px\"><button class=\"ds-k ds-k-myro\">Get directions</button></div>",
+      "css": ".ds-k{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.75rem 1.5rem;font:600 1.0625rem/1.2 Eczar,Georgia,serif;letter-spacing:.01em;color:#f0e3c6;background:#8b2318;border:1.5px solid #1c1510;border-radius:3px;box-shadow:0 6px 14px -6px rgb(0 0 0/.45);cursor:pointer;transition:background-color 160ms ease,transform 120ms ease;}.ds-k::before{content:\"\";position:absolute;inset:4px;border:1px dashed currentColor;border-radius:1px;opacity:.5;pointer-events:none;}.ds-k:hover{background:#5c140c;}.ds-k:active{transform:translateY(2px);}.ds-k:focus-visible{outline:2px solid #e3ae3c;outline-offset:3px;}.ds-k-myro{background:#e3ae3c;color:#1c1510;}.ds-k-myro:hover{background:#f0bf55;}"
+    },
+    {
+      "name": "v2 · Ghost Button",
+      "kind": "button",
+      "refersTo": "v2-button-ghost",
+      "description": "Secondary block-printed action in the current text colour.",
+      "html": "<div style=\"background:#1d1915;padding:24px;color:#f0e3c6\"><button class=\"ds-k ds-k-ghost\">Add to Apple Calendar</button></div>",
+      "css": ".ds-k{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.75rem 1.5rem;font:600 1.0625rem/1.2 Eczar,Georgia,serif;letter-spacing:.01em;color:#f0e3c6;background:#8b2318;border:1.5px solid #1c1510;border-radius:3px;box-shadow:0 6px 14px -6px rgb(0 0 0/.45);cursor:pointer;transition:background-color 160ms ease,transform 120ms ease;}.ds-k::before{content:\"\";position:absolute;inset:4px;border:1px dashed currentColor;border-radius:1px;opacity:.5;pointer-events:none;}.ds-k:hover{background:#5c140c;}.ds-k:active{transform:translateY(2px);}.ds-k:focus-visible{outline:2px solid #e3ae3c;outline-offset:3px;}.ds-k-ghost{background:transparent;color:inherit;border-color:currentColor;box-shadow:none;}.ds-k-ghost:hover{background:rgb(240 227 198/.1);}"
+    },
+    {
+      "name": "v2 · Language Tabs",
+      "kind": "chip",
+      "refersTo": "v2-tabs-active",
+      "description": "Two printed tabs in one ink border; pressed tab dyed madder.",
+      "html": "<div class=\"ds-tabs\"><button aria-pressed=\"true\">English</button><button lang=\"te\" aria-pressed=\"false\" style=\"font-family:'Noto Serif Telugu',serif\">తెలుగు</button></div>",
+      "css": ".ds-tabs{display:inline-grid;grid-auto-flow:column;border:1.5px solid #1c1510;border-radius:3px;overflow:hidden;background:#f0e3c6;}.ds-tabs button{min-height:2.75rem;padding:.4rem 1.2rem;font:600 1rem/1.2 Eczar,Georgia,serif;color:#1c1510;background:transparent;border:0;cursor:pointer;}.ds-tabs button+button{border-left:1.5px solid #1c1510;}.ds-tabs button[aria-pressed=\"true\"]{background:#8b2318;color:#f0e3c6;}.ds-tabs button:focus-visible{outline:2px solid #8b2318;outline-offset:-5px;}"
+    },
+    {
+      "name": "v2 · Field",
+      "kind": "input",
+      "refersTo": "v2-field",
+      "description": "Reply input on ecru cloth with a caps label.",
+      "html": "<div style=\"background:#f0e3c6;padding:24px\"><label class=\"ds-k-label\">Your name<input class=\"ds-k-field\" placeholder=\"Your name, or your family’s\"></label></div>",
+      "css": ".ds-k-label{display:block;font:600 .9375rem/1.6 Eczar,Georgia,serif;letter-spacing:.12em;text-transform:uppercase;color:#8b2318;}.ds-k-field{display:block;margin-top:.5rem;width:100%;min-height:3.25rem;padding:.6rem .9rem;font:400 1.1875rem/1.3 Eczar,Georgia,serif;color:#1c1510;background:rgb(255 250 238/.55);border:1.5px solid #1c1510;border-radius:3px;caret-color:#8b2318;}.ds-k-field::placeholder{color:rgb(28 21 16/.62);}.ds-k-field:focus-visible{outline:2px solid #8b2318;outline-offset:2px;}"
+    },
+    {
+      "name": "v2 · Seam",
+      "kind": "custom",
+      "description": "Dotted seam joining two dye registers.",
+      "html": "<div style=\"background:#8b2318;height:40px\"></div><div class=\"ds-seam\"></div><div style=\"background:#1d2d52;height:40px\"></div>",
+      "css": ".ds-seam{height:15px;background:radial-gradient(circle,#e3ae3c 1.5px,transparent 2px) 0 50%/10px 10px repeat-x,linear-gradient(rgb(0 0 0/.55) 0 0) 0 0/100% 2px no-repeat,linear-gradient(rgb(0 0 0/.55) 0 0) 0 100%/100% 2px no-repeat,#1d1915;}"
+    },
+    {
+      "name": "v2 · Cartouche",
+      "kind": "card",
+      "description": "Writing block inside a painted register (768px and up).",
+      "html": "<div style=\"background:#8b2318;padding:24px;color:#f0e3c6\"><div class=\"ds-cartouche\"><h3>The first coffee</h3><p>A short conversation went on much longer than either of us planned.</p></div></div>",
+      "css": ".ds-cartouche{position:relative;padding:2.25rem 2.25rem 2.5rem;border:1.5px solid rgb(0 0 0/.45);background:rgb(0 0 0/.1);font:400 1.1875rem/1.625 Eczar,Georgia,serif;}.ds-cartouche::before{content:\"\";position:absolute;inset:6px;border:1px dashed currentColor;opacity:.35;pointer-events:none;}.ds-cartouche h3{margin:0;font:700 2.4rem/1.08 Eczar,Georgia,serif;}.ds-cartouche p{margin:1.25rem 0 0;max-width:34ch;}"
+    },
+    {
+      "name": "v2 · Music Seal",
+      "kind": "button",
+      "refersTo": "v2-music-seal",
+      "description": "Floating pause seal shown only while music plays.",
+      "html": "<button class=\"ds-k-seal\" aria-label=\"Pause the music\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 18.5V6.2l10-2.2v12.2 M9 18.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M19 16.2a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M9 9.6l10-2.2\"/></svg></button>",
+      "css": ".ds-k-seal{position:relative;display:grid;place-items:center;width:44px;height:44px;border:1.5px solid #1c1510;border-radius:999px;background:#8b2318;color:#f0e3c6;box-shadow:0 10px 24px -10px rgb(0 0 0/.8);cursor:pointer;transition:transform 150ms;}.ds-k-seal::before{content:\"\";position:absolute;inset:4px;border:1px dashed rgb(240 227 198/.6);border-radius:999px;}.ds-k-seal:hover{transform:scale(1.05);}.ds-k-seal:active{transform:scale(.95);}.ds-k-seal:focus-visible{outline:2px solid #e3ae3c;outline-offset:3px;}"
     }
   ],
   "narrative": {

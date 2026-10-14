@@ -11,6 +11,8 @@ export const couple = {
 export const blessing = "శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు";
 
 export const headline = "A ring today, a lifetime to follow.";
+/** v2 (the kalamkari cloth) opens with a different line from the same list of headline options. */
+export const headlineV2 = "Some stories begin with “once upon a time.” Ours begins with a yes.";
 
 /** 2026-11-20 09:34 IST. */
 export const MUHURTHAM_ISO = "2026-11-20T09:34:00+05:30";
@@ -86,7 +88,7 @@ export const story = [
   {
     chapter: "Three",
     title: "The moment we knew",
-    text: "Our think-alike nature, after countless talks. That was when we both knew this was it.",
+    text: "Our think-alike nature after countless talks. That was when we both knew this was it.",
     photo: "lantern-steps",
   },
   {

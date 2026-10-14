@@ -51,9 +51,9 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
-// Before first paint: a guest who already dyed the cloth this visit, or who asks for less motion,
-// sees it dyed straight away.
-const headScript = `(function(){var h=document.documentElement;try{if(sessionStorage.getItem("v2-dyed")||matchMedia("(prefers-reduced-motion: reduce)").matches)h.dataset.dyed="1"}catch(e){}})()`;
+// Before first paint: a guest who already dyed the cloth this visit, or who asks for less motion, sees it
+// dyed straight away; everyone else first watches the kalam draw it (data-intro, with a safety release).
+const headScript = `(function(){var h=document.documentElement,d=false;try{d=!!sessionStorage.getItem("v2-dyed")||matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}if(d)h.dataset.dyed="1";else{h.dataset.intro="1";setTimeout(function(){delete h.dataset.intro},12000)}})()`;
 
 export default function V2Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

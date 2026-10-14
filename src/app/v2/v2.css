@@ -18,6 +18,8 @@
 @property --r1 { syntax: "<length>"; inherits: true; initial-value: 0px; }
 @property --r2 { syntax: "<length>"; inherits: true; initial-value: 0px; }
 @property --r3 { syntax: "<length>"; inherits: true; initial-value: 0px; }
+@property --wipe { syntax: "<percentage>"; inherits: false; initial-value: -12%; }
+@property --grow { syntax: "<percentage>"; inherits: false; initial-value: 0%; }
 
 @layer base {
   :root {
@@ -190,6 +192,22 @@
   .dye-cue { transition: opacity 500ms ease, visibility 0s; }
   .hero:not([data-state="undyed"]) .dye-cue,
   html[data-dyed] .dye-cue { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 500ms ease, visibility 0s 500ms; }
+
+  /* ---------- the opening: the kalam writes the cloth before the guest dyes it ---------- */
+  /* html[data-intro] is set before first paint by the head script, so nothing flashes in early */
+  html[data-intro] .hero-undyed :is([data-draw="blessing"], [data-draw="seam"], [data-draw="title"], [data-draw="name1"], [data-draw="name2"]) {
+    -webkit-mask-image: linear-gradient(90deg, #000 calc(var(--wipe) - 5%), transparent calc(var(--wipe) + 5%));
+    mask-image: linear-gradient(90deg, #000 calc(var(--wipe) - 5%), transparent calc(var(--wipe) + 5%));
+  }
+  html[data-intro] .hero-undyed :is([data-draw="headline"], [data-draw="date"], [data-draw="music"]) { opacity: 0; }
+  html[data-intro] .hero-undyed [data-draw="tree"] {
+    -webkit-mask: url("../../assets/v2/bloom-2.png") 50% var(--gy, 32%) / var(--grow) var(--grow) no-repeat;
+    mask: url("../../assets/v2/bloom-2.png") 50% var(--gy, 32%) / var(--grow) var(--grow) no-repeat;
+  }
+  .kalam, .cue-drawing { display: none; }
+  html[data-intro] .kalam { display: block; }
+  html[data-intro] .cue-drawing { display: inline; }
+  html[data-intro] .cue-touch { display: none; }
 
   /* ---------- story panels take their dye as they come into view ---------- */
   .panel { position: relative; display: block; }

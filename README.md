@@ -3,7 +3,7 @@
 A digital invitation for the engagement on **Friday, 20 November 2026, muhurtham 09:34 AM IST**, Quality Inn Ramachandra, Duvvada, Visakhapatnam. Two versions live side by side:
 
 - **v1** at `/`: the watercolor invitation (`src/app/(v1)/`, `src/components/*.tsx`).
-- **v2** at `/v2/`: the kalamkari cloth (`src/app/v2/`, `src/components/v2/`). Guests touch the undyed cloth to dye it, read the story as painted panels, and stamp their reply.
+- **v2** at `/v2/`: the kalamkari cloth (`src/app/v2/`, `src/components/v2/`). It opens with a kalam pen drawing the cloth live (once a visit; a tap skips it), then guests touch the undyed cloth to dye it, read the story as painted panels, and stamp their reply.
 
 Both read the same facts from `src/content/invitation.ts`. Next.js 16 (App Router) · TypeScript · Tailwind CSS v4. Every page is prerendered static.
 

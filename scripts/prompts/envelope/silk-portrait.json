@@ -1,0 +1,9 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "A top-down photograph of a soft piece of deep maroon pure silk saree fabric spread flat on a table, with a gold zari border running along the bottom edge and up the right side, softly lit by natural window light from the upper left. Scattered only near the edges and corners: fresh white jasmine buds and a short jasmine strand, a few pink rose petals, a small sprinkle of yellow turmeric rice grains (akshintalu) and two fresh betel leaves. The large central area is clear, smooth silk with gentle natural folds and a subtle sheen, left empty for an envelope to be placed. Photorealistic editorial wedding stationery photography, shallow depth of field, rich but natural colour, fine silk weave visible. No envelope, no paper, no cards, no text, no letters, no people, no hands, no lamps, no candles, no diyas, no flames, no fire.",
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

@@ -214,40 +214,125 @@
 }
 
 /* ─────────────── Envelope ─────────────── */
+/* A real envelope on the family's silk: handmade cotton paper lit from the upper left, letterpressed
+   names, a wax seal that cracks, turmeric twine that slips off, and a card that grows into the page. */
 html:not([data-opened]) body { overflow: hidden; }
 html[data-opened] .envelope-gate { display: none; }
 
-.envelope { perspective: 1600px; }
-.env-flap-wrap {
-  transform-origin: 50% 0;
-  transform-style: preserve-3d;
-  transition: transform 950ms var(--ease-soft);
+.env-vignette { background: radial-gradient(ellipse 78% 62% at 50% 46%, transparent 42%, rgb(25 3 8 / 0.5) 100%); }
+
+/* one sheet of cotton paper across every fold */
+.env-paper { background-color: #f1e8d8; background-size: cover; background-position: center; }
+
+.env-body { perspective: 1400px; transform: rotate(-1.6deg); animation: env-settle 900ms var(--ease-out) both; }
+@keyframes env-settle {
+  from { transform: translateY(-18px) rotate(-1.6deg) scale(1.025); opacity: 0; }
+  to { transform: rotate(-1.6deg); opacity: 1; }
 }
-.env-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.env-shadow { box-shadow: 0 1px 1.5px rgb(20 0 4 / 0.35), 0 10px 18px -6px rgb(20 0 4 / 0.55), 0 34px 60px -18px rgb(20 0 4 / 0.6); }
+.env-inside { filter: brightness(0.88) sepia(0.08); }
+
+.env-fold::after { content: ""; position: absolute; inset: 0; }
+.env-fold-l { clip-path: polygon(0 0, 47% 52%, 0 100%); }
+.env-fold-l::after { background: linear-gradient(100deg, rgb(255 255 255 / 0.16), rgb(255 255 255 / 0) 65%); }
+.env-fold-r { clip-path: polygon(100% 0, 53% 52%, 100% 100%); }
+.env-fold-r::after { background: linear-gradient(260deg, rgb(60 30 15 / 0.13), rgb(60 30 15 / 0.03) 70%); }
+.env-fold-b { clip-path: polygon(0 100%, 50% 46%, 100% 100%); }
+.env-fold-b::after { background: linear-gradient(0deg, rgb(60 30 15 / 0.07), rgb(255 255 255 / 0.07)); }
+
+/* letterpress: ink sits in a slight bite, lit from above */
+.env-press { color: rgb(118 36 50 / 0.92); text-shadow: 0 1px 0 rgb(255 255 255 / 0.6), 0 -0.5px 0.5px rgb(70 20 25 / 0.25); }
+.env-press .script { color: inherit; }
+.env-foil { color: #a47b34; text-shadow: 0 1px 0 rgb(255 245 220 / 0.75), 0 -0.5px 0 rgb(80 50 10 / 0.35); }
+
+.env-flap-wrap { transform-origin: 50% 0; transform-style: preserve-3d; transition: transform 950ms var(--ease-soft); }
+.env-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  clip-path: polygon(0 0, 100% 0, 52.8% 96.2%, 50% 100%, 47.2% 96.2%);
+}
 .env-face-back { transform: rotateX(180deg); }
-.env-card { transform: translateY(0); transition: transform 1150ms var(--ease-out); }
-.env-seal { transition: transform 520ms var(--ease-out), opacity 420ms ease-out 120ms; }
-.env-thread { transition: opacity 380ms ease-out, transform 620ms var(--ease-out); }
+.env-flap-front::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(255 255 255 / 0.18), rgb(60 30 15 / 0.05)); }
+.env-flap-front::before, .env-liner::after { content: ""; position: absolute; inset: 0; z-index: 1; background: rgb(45 20 10); opacity: 0; pointer-events: none; }
+.env-dab { opacity: 0.85; mix-blend-mode: multiply; }
 
-.envelope-gate:not([data-stage="idle"]) .env-seal { transform: translateY(-18px) scale(1.15) rotate(-10deg); opacity: 0; }
-.envelope-gate:not([data-stage="idle"]) .env-thread { opacity: 0; transform: translateY(22px); }
-.envelope-gate:not([data-stage="idle"]) .env-flap-wrap { transform: rotateX(180deg); }
-.envelope-gate[data-stage="rise"] .env-flap-wrap,
-.envelope-gate[data-stage="reveal"] .env-flap-wrap { z-index: 1; }
-.envelope-gate[data-stage="rise"] .env-card,
-.envelope-gate[data-stage="reveal"] .env-card { transform: translateY(-62%); }
-.envelope-gate:not([data-stage="idle"]) .env-hint { opacity: 0; }
-.envelope-gate[data-stage="reveal"] {
-  opacity: 0;
-  transform: scale(1.05);
-  filter: blur(5px);
-  transition: opacity 950ms ease-in-out, transform 1200ms var(--ease-out), filter 950ms;
+.env-seal { transform: translate(-50%, -50%); transition: transform 160ms var(--ease-out); }
+.env-seal-half { filter: drop-shadow(0 3px 3px rgb(30 0 6 / 0.5)); transition: transform 820ms cubic-bezier(0.45, 0, 0.8, 0.35), opacity 320ms ease 520ms; }
+.env-crack { opacity: 0; transition: opacity 90ms ease; }
+.env-glint {
+  background: linear-gradient(115deg, transparent 38%, rgb(255 228 228 / 0.5) 49%, transparent 60%) -150% 0 / 250% 100% no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transition: opacity 120ms ease;
 }
-.envelope-gate[data-stage="idle"] .env-seal-pulse { animation: seal-breathe 2.8s ease-in-out infinite; }
+.envelope-gate[data-stage="idle"] .env-glint { animation: env-glint 4.2s ease-in-out 1.4s infinite; }
+@keyframes env-glint {
+  0% { background-position: -150% 0; }
+  38%, 100% { background-position: 250% 0; }
+}
+.env-twine { filter: drop-shadow(0 1.5px 1px rgb(60 30 10 / 0.35)); transition: transform 800ms cubic-bezier(0.5, 0, 0.8, 0.4) 120ms, opacity 380ms ease 560ms; }
+.env-flap-shadow { transition: opacity 300ms ease; }
+.env-card { transition: transform 950ms var(--ease-out); }
+.env-hint { transition: opacity 400ms ease; }
 
-@keyframes seal-breathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.045); }
+/* crack: the wax splits along its line */
+.envelope-gate:not([data-stage="idle"]) .env-hint,
+.envelope-gate:not([data-stage="idle"]) .env-glint { opacity: 0; }
+.envelope-gate[data-stage="crack"] .env-seal { transform: translate(-50%, -50%) scale(0.95); }
+.envelope-gate[data-stage="crack"] .env-crack { opacity: 1; }
+/* break: the halves drop away, the twine slips off, the flap stops resting on the pocket */
+.envelope-gate:not([data-stage="idle"]):not([data-stage="crack"]) .env-seal-l { transform: translate(-38%, 210%) rotate(-48deg); opacity: 0; }
+.envelope-gate:not([data-stage="idle"]):not([data-stage="crack"]) .env-seal-r { transform: translate(40%, 200%) rotate(56deg); opacity: 0; }
+.envelope-gate:not([data-stage="idle"]):not([data-stage="crack"]) .env-twine { transform: translate(14%, 30px) rotate(6deg); opacity: 0; }
+.envelope-gate:not([data-stage="idle"]):not([data-stage="crack"]) .env-flap-shadow { opacity: 0; }
+/* open: the flap swings back; its outside dims as it turns, its liner brightens as it lands */
+.envelope-gate:is([data-stage="open"], [data-stage="rise"], [data-stage="lift"], [data-stage="reveal"]) .env-flap-wrap { transform: rotateX(180deg); }
+.envelope-gate[data-stage="open"] .env-flap-front::before { animation: env-dim 950ms var(--ease-soft) both; }
+.envelope-gate[data-stage="open"] .env-liner::after { animation: env-brighten 950ms var(--ease-soft) both; }
+@keyframes env-dim { from { opacity: 0; } to { opacity: 0.35; } }
+@keyframes env-brighten { from { opacity: 0.4; } to { opacity: 0; } }
+/* rise: the card slides up out of the pocket, in front of the opened flap */
+.envelope-gate:is([data-stage="rise"], [data-stage="lift"], [data-stage="reveal"]) .env-flap-wrap { z-index: 1; }
+.envelope-gate[data-stage="rise"] .env-card { transform: translateY(-64%); }
+/* lift: the envelope drops away and the card comes forward to the middle of the screen */
+.envelope-gate:is([data-stage="lift"], [data-stage="reveal"]) .env-body > :not(.env-card) {
+  translate: 0 46%;
+  opacity: 0;
+  transition: translate 850ms var(--ease-soft), opacity 600ms ease 150ms;
+}
+.envelope-gate[data-stage="lift"] .env-card {
+  z-index: 10;
+  transform: translate(0px, 0px) translateY(-2%) scale(1.16) rotate(0deg);
+  box-shadow: 0 30px 60px -20px rgb(20 0 4 / 0.7);
+  transition: transform 850ms var(--ease-soft), box-shadow 850ms ease;
+}
+/* reveal: the card's painting grows to cover the screen as the page blooms in beneath it */
+/* the card straightens and grows until its painting sits exactly over the same painting on the page, then lets go */
+.envelope-gate[data-stage="reveal"] .env-card {
+  z-index: 10;
+  transform: translate(var(--rx, 0px), var(--ry, 0px)) translateY(-2%) scale(calc(1.16 * var(--rk, 3))) rotate(1.6deg);
+  opacity: 0;
+  transition: transform 900ms cubic-bezier(0.55, 0, 0.35, 1), opacity 320ms ease 880ms;
+}
+/* as it lands, the card's paper border and shadow fall away so only the painting meets the painting */
+.envelope-gate[data-stage="reveal"] .env-card > div { background-image: none !important; background-color: transparent; box-shadow: none; transition: background-color 400ms ease; }
+.envelope-gate[data-stage="reveal"] .env-card { box-shadow: none; }
+.envelope-gate { transition: background-color 500ms ease; }
+.envelope-gate[data-stage="reveal"] { background-color: transparent; }
+.envelope-gate[data-stage="reveal"] .env-table,
+.envelope-gate[data-stage="reveal"] .env-vignette { opacity: 0; transition: opacity 500ms ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  .env-body { animation: none; }
+  .envelope-gate[data-stage="idle"] .env-glint { animation: none; }
 }
 
 /* the hero blooms in the first time the envelope opens */
@@ -293,7 +378,7 @@ html:has(dialog[open]) { overflow: hidden; }
 
 /* hero lettering rides above the drifting petals once the envelope is open (never above the envelope) */
 .hero-copy { z-index: 1; }
-html[data-opened] .hero-copy, html[data-opening] .hero-copy { z-index: 61; }
+html[data-opened] .hero-copy { z-index: 61; }
 .hero-copy { text-shadow: 0 0 14px rgb(251 246 239 / 0.85), 0 0 2px rgb(251 246 239 / 0.6); }
 .hero-copy::before {
   content: "";
@@ -311,5 +396,3 @@ html[data-opened] .hero-copy, html[data-opening] .hero-copy { z-index: 61; }
   mask-composite: intersect;
 }
 
-/* envelope paper: painted rag paper with the faintest shading */
-.env-paper { background: url("../../assets/media/paper.jpg") center / cover; }

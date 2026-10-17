@@ -1,0 +1,9 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A flat, evenly lit, straight-down photograph filling the frame of a sheet of handmade cotton rag paper in warm ivory: visible soft fibres, tiny inclusions and a gentle uneven felted texture, completely flat, no folds, no edges, no shadows, no vignette, no text, no stains.",
+    "aspect_ratio": "1:1",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

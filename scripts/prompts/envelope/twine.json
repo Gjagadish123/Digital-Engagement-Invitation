@@ -1,0 +1,9 @@
+{
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "A single long strand of soft turmeric-yellow twisted cotton twine lying perfectly straight and horizontal across the full width of the frame, photographed from directly above, sharp macro detail of the twist and fibres, isolated on a plain pure white background (#ffffff) with no shadow. Nothing else in the frame, no text.",
+    "aspect_ratio": "21:9",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

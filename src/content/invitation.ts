@@ -106,7 +106,8 @@ export const about = [
 ];
 
 export const families = [
-  { side: "Bride’s family", names: ["Manga bai", "Bhikshalu"], place: "Tenali" },
+  // place corrected by the family on 2026-10-17 (the brief said Tenali)
+  { side: "Bride’s family", names: ["Manga bai", "Bhikshalu"], place: "Vizag" },
   { side: "Groom’s family", names: ["Sushila", "Kesava Rao"], place: "Vizag" },
 ];
 

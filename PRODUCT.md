@@ -51,7 +51,7 @@ It is this couple's own invitation: their photographs, their story in their word
 ## Evidence on Hand
 
 - 10 photos in `photos/` (WhatsApp exports, 720–1200px wide). One is a pre-made collage (`3.22.26 PM (1)`) unsuitable for direct use. Strongest: beach silhouette at the sea horizon (`3.23.12 PM (1)`), couple inside a glowing ring of light (`3.35.01 PM`), lantern-lit forest steps (`3.22.26 PM`).
-- Families: Bride's — Manga bai and Bhikshalu (Tenali). Groom's — Sushila and Kesava Rao (Vizag).
+- Families: Bride's — Manga bai and Bhikshalu (Vizag; the brief said Tenali, corrected by the family 2026-10-17). Groom's — Sushila and Kesava Rao (Vizag).
 - About: Sai Girishma — MBBS MD Anaesthesia, Vizag, painting and dancing. Ravi — Chartered Accountant from Vizag, business enthusiast, financial markets.
 - No formal/traditional-dress couple portraits, no family group photos, no venue photos. Do not fabricate them.
 

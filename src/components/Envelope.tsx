@@ -89,7 +89,7 @@ export function Envelope() {
             <span className="text-gold">&amp;</span> {couple.groom}
           </span>
         </p>
-        <p className="caps mt-3">Engagement · 20 · 11 · 2026</p>
+        <p className="caps mt-3">Engagement</p>
       </div>
 
       {/* the envelope */}

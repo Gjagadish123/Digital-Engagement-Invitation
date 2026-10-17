@@ -34,6 +34,7 @@ It is this couple's own invitation: their photographs, their story in their word
 - Source of truth: `Sai-Girishma-Ravi-Engagement-Invitation-Content.docx` (content brief). Do not invent names, events, traditions, or story details.
 - Required: hero (శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు, names, a chosen headline, date, couple photo); countdown; invitation wording with English/Telugu toggle; four-chapter story with photos; muhurtham details; venue with map and directions; gallery; RSVP; footer with family compliments and closing quote.
 - RSVP: short form (name, number of guests) that composes a WhatsApp message to 9550887700 — no backend (user choice).
+- v1 (route /) changes requested 2026-10-17: no RSVP section; no couple photo in the hero; story scenes illustrated (no real photos); "The Two of Us" keeps its photo but drops the hobbies; Moments leaves out photos 4, 6 and 8 (yellow-dupatta, beach-night, selfie-window); music is v2's veena-and-flute track. v2 (/v2) unchanged.
 - Add to calendar (Google + Apple/.ics) for 20 Nov 2026, 09:34 IST.
 - Soft instrumental background music, off by default, with a floating toggle; track generated with Kie.ai (user choice), `public/media/soft-melody.mp3`. Kie.ai key lives in `.env` only, used by the local `scripts/kie.mjs`, never shipped.
 - Illustrations (watercolor scenes, florals, wax seal) are generated with Kie.ai and committed as static assets; real photographs carry every personal moment.

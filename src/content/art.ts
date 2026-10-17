@@ -1,5 +1,4 @@
 // Watercolor illustrations and materials painted for this invitation with Kie.ai (see scripts/prompts/).
-// Each story scene leaves a pale oval where a real photograph is set in; `oval` is that box in % of the painting.
 import heroPortrait from "@/assets/art/hero-portrait.jpg";
 import heroLandscape from "@/assets/art/hero-landscape.jpg";
 import florals from "@/assets/art/florals.png";
@@ -18,9 +17,10 @@ import story4 from "@/assets/art/story-4.jpg";
 export const art = { heroPortrait, heroLandscape, florals, seal, thambulam, thread, dab, goldLeaf, divider1, divider2 };
 // Painted washes and rag paper live in src/assets/media/ so CSS can lay them under sections.
 
+// Each story scene is fully illustrated: the couple are painted into it (no photographs), per the family's request.
 export const storyScenes = [
-  { src: story1, oval: { left: 24, top: 22, width: 50, height: 44 }, alt: "A watercolor of green hills above a turquoise sea, banana plants and a garland of mango leaves." },
-  { src: story2, oval: { left: 21, top: 13, width: 57, height: 44 }, alt: "A watercolor of a quiet bay at dusk with palms and a crescent moon." },
-  { src: story3, oval: { left: 20, top: 14, width: 56, height: 50 }, alt: "A watercolor of a bamboo garden path under an arch of roses." },
-  { src: story4, oval: { left: 24, top: 24, width: 48, height: 49 }, alt: "A watercolor of a decorated mandapam hung with marigold garlands and mango leaves." },
+  { src: story1, alt: "A watercolor illustration: the two of them talking over coffee at a café table on the green hill at Rushikonda, the turquoise sea behind them." },
+  { src: story2, alt: "A watercolor illustration of a quiet bay at dusk under a crescent moon: she sits on the sea wall and he sits further along the shore, each on the phone, a trail of tiny stars arcing between them." },
+  { src: story3, alt: "A watercolor illustration: the two of them laughing together on a garden bench beneath an arch of roses on a bamboo path." },
+  { src: story4, alt: "A watercolor illustration of their engagement under a mandapam hung with marigolds and mango leaves: she in a silk saree and he in a kurta, exchanging rings." },
 ] as const;

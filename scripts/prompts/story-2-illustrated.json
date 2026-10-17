@@ -1,0 +1,12 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "Edit this exact watercolor painting. Keep everything outside the large pale oval in the centre exactly as it is: the same composition, plants, garlands, colours, paper texture and soft linework. Paint inside the oval, so the oval disappears and the picture becomes one continuous scene: a quiet evening by the bay under the crescent moon: on the left she sits on the low sea wall holding a mobile phone to her ear and smiling, on the right, a little further along the shore, he sits holding a mobile phone to his ear and laughing, and a faint trail of tiny golden stars arcs over the water between their two phones. The two people are a young Indian couple drawn as delicate storybook watercolor illustrations in the same soft style and palette as the rest of the painting (illustrated, not photographic): he has short black hair, a neat short beard and glasses; she has long black hair in a braid. Simple, gentle faces. No text, no letters, no numbers, no lamps, no candles, no diyas, no flames, no fire.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_13552f589305aeb4520586c203b89a44.png"
+    ],
+    "aspect_ratio": "3:4",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

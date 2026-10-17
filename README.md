@@ -2,7 +2,7 @@
 
 A digital invitation for the engagement on **Friday, 20 November 2026, muhurtham 09:34 AM IST**, Quality Inn Ramachandra, Duvvada, Visakhapatnam. Two versions live side by side:
 
-- **v1** at `/`: the watercolor invitation (`src/app/(v1)/`, `src/components/*.tsx`).
+- **v1** at `/`: the watercolor invitation (`src/app/(v1)/`, `src/components/*.tsx`). At the family's request it has no RSVP form, no photograph in the hero, illustrated (not photographic) story scenes, no hobbies under "The Two of Us", and leaves photos 4, 6 and 8 out of Moments (`galleryV1` in `src/content/photos.ts`).
 - **v2** at `/v2/`: the kalamkari cloth (`src/app/v2/`, `src/components/v2/`). It opens with a kalam pen drawing the cloth live (once a visit; a tap skips it), then guests touch the undyed cloth to dye it, read the story as painted panels, and stamp their reply.
 
 Both read the same facts from `src/content/invitation.ts`. Next.js 16 (App Router) · TypeScript · Tailwind CSS v4. Every page is prerendered static.
@@ -49,15 +49,15 @@ node scripts/pages-images.mjs   # then serve out/ under /Digital-Engagement-Invi
 | Watercolor paintings (generated with Kie.ai) | `src/assets/art/`, prompts in `scripts/prompts/` |
 | Calendar file | `src/app/engagement.ics/route.ts` (09:34–13:00 IST; the end time is an estimate covering breakfast and lunch) |
 | Link preview image | `src/app/opengraph-image.jpg` |
-| Background music | `public/media/soft-melody.mp3` |
+| Background music (both versions) | `public/media/v2-kalam.mp3` |
 
 ### Swap the music
 
-Two takes were generated. Take 1 is live; both are in `tmp/review/` while that folder exists. To use the other one, copy it over `public/media/soft-melody.mp3`.
+Both versions play `public/media/v2-kalam.mp3` (veena and flute). The second take is `tmp/kie/music-kalam/track-1.mp3` while that folder exists; copy it over the live file to switch.
 
 ### Add gallery photos
 
-Put the image in `src/assets/photos/`, import it in `src/content/photos.ts` with a short description, and add its key to the `gallery` list.
+Put the image in `src/assets/photos/`, import it in `src/content/photos.ts` with a short description, and add its key to the `gallery` list (v2 shows that whole list; v1 shows `galleryV1`).
 
 ### Regenerate a painting
 

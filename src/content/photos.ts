@@ -65,3 +65,7 @@ export const gallery: PhotoKey[] = [
   "selfie-window",
   "ring-of-light",
 ];
+
+/** v1's Moments, without photos 4, 6 and 8 of the list above (the family asked for them to be left out there, 2026-10-17). */
+const leftOutOfV1: PhotoKey[] = ["yellow-dupatta", "beach-night", "selfie-window"];
+export const galleryV1 = gallery.filter((k) => !leftOutOfV1.includes(k));

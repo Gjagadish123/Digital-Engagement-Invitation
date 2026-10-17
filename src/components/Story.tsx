@@ -4,17 +4,8 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import { storyScenes } from "@/content/art";
 import { quotes, story } from "@/content/invitation";
-import { photos } from "@/content/photos";
 import { Icon } from "./Icon";
 import { SectionTitle } from "./Ornament";
-
-// Where each photograph's subject sits, so the oval frames the two of them.
-const focus: Record<string, string> = {
-  "palm-garden": "50% 30%",
-  "beach-night": "45% 45%",
-  "lantern-steps": "62% 74%",
-  "ring-of-light": "50% 56%",
-};
 
 export function Story() {
   const track = useRef<HTMLDivElement>(null);
@@ -43,7 +34,6 @@ export function Story() {
         >
           {story.map((ch, i) => {
             const scene = storyScenes[i];
-            const photo = photos[ch.photo];
             const caption = "caption" in ch ? ch.caption : undefined;
             return (
               <article
@@ -55,26 +45,6 @@ export function Story() {
               >
                 <div className="relative mx-auto aspect-[3/4] w-full max-w-[26rem]">
                   <Image src={scene.src} alt={scene.alt} fill sizes="(min-width: 768px) 416px, 88vw" className="feather on-paper object-cover" />
-                  <div
-                    className="vignette on-paper absolute"
-                    style={{
-                      // a little larger than the painted oval, so the photo fades into the painting, not its blank ground
-                      left: `${scene.oval.left - scene.oval.width * 0.12}%`,
-                      top: `${scene.oval.top - scene.oval.height * 0.12}%`,
-                      width: `${scene.oval.width * 1.24}%`,
-                      height: `${scene.oval.height * 1.24}%`,
-                    }}
-                  >
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      fill
-                      placeholder="blur"
-                      sizes="(min-width: 768px) 240px, 52vw"
-                      className="object-cover"
-                      style={{ objectPosition: focus[ch.photo] }}
-                    />
-                  </div>
                 </div>
 
                 <div className="mx-auto mt-8 max-w-[26rem] text-center md:mt-0 md:text-left">

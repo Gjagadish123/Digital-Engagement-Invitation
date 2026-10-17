@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
-import { gallery, photos } from "@/content/photos";
+import { galleryV1 as gallery, photos } from "@/content/photos";
 import { Icon } from "./Icon";
 import { SectionTitle } from "./Ornament";
 

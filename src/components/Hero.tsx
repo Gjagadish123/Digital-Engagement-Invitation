@@ -1,7 +1,6 @@
-import Image, { getImageProps } from "next/image";
+import { getImageProps } from "next/image";
 import { art } from "@/content/art";
 import { blessing, couple, event, headline } from "@/content/invitation";
-import { photos } from "@/content/photos";
 import { Icon } from "./Icon";
 
 const alt =
@@ -16,7 +15,6 @@ export function Hero() {
   const {
     props: { srcSet: tall, ...img },
   } = getImageProps({ ...common, src: art.heroPortrait, loading: "eager", fetchPriority: "high" });
-  const portrait = photos["selfie-window"];
 
   return (
     <header id="top" tabIndex={-1} className="relative h-[100svh] min-h-[680px] overflow-hidden outline-none">
@@ -26,7 +24,7 @@ export function Hero() {
         <img {...img} alt={alt} className="bloom-first absolute inset-0 size-full object-cover object-[50%_40%]" />
       </picture>
 
-      {/* lettering set in the open sky of the arch, the couple set into the garden path below */}
+      {/* lettering set in the open sky of the arch */}
       <div className="absolute inset-x-0 top-[24%] mx-auto flex flex-col items-center landscape:md:top-[27%]">
         <div className="hero-copy relative flex w-[min(60vw,30rem)] flex-col items-center text-center landscape:md:w-[min(60vw,52rem)]">
         <p lang="te" className="bloom-first-late text-[clamp(0.95rem,4vw,1.2rem)] text-wine">
@@ -45,10 +43,6 @@ export function Hero() {
         <p className="bloom-first-late caps mt-3 whitespace-nowrap text-[clamp(0.72rem,3vw,0.85rem)] tracking-[0.1em] text-wine">
           <time dateTime="2026-11-20T09:34+05:30">{event.dateLong.replace(", ", " · ")}</time>
         </p>
-        </div>
-        {/* the two of them, printed into the painted garden path */}
-        <div className="bloom-first-late hero-photo relative mt-2 aspect-[5/4] w-[min(44vw,11rem)] overflow-hidden landscape:md:w-[11rem]">
-          <Image src={portrait.src} alt={portrait.alt} fill placeholder="blur" sizes="200px" className="scale-[1.12] object-cover object-[55%_30%]" />
         </div>
       </div>
 

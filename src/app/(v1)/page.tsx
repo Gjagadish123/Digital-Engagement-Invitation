@@ -8,7 +8,6 @@ import { Muhurtham } from "@/components/Muhurtham";
 import { MusicButton } from "@/components/MusicButton";
 import { Interlude } from "@/components/Ornament";
 import { Petals } from "@/components/Petals";
-import { Rsvp } from "@/components/Rsvp";
 import { SaveTheDate } from "@/components/SaveTheDate";
 import { Story } from "@/components/Story";
 import { Venue } from "@/components/Venue";
@@ -30,7 +29,6 @@ export default function Page() {
         <Muhurtham />
         <Venue />
         <Gallery />
-        <Rsvp />
         <Closing />
       </main>
     </>

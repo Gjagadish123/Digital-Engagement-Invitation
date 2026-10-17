@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./Icon";
 
-/** Soft instrumental, off until a guest taps. play() runs inside the tap (iOS rule). */
+/** Veena and flute in Mohanam (shared with v2), off until a guest taps. play() runs inside the tap (iOS rule). */
 export function MusicButton() {
   const audio = useRef<HTMLAudioElement>(null);
   const wanted = useRef(false);
@@ -50,13 +50,13 @@ export function MusicButton() {
         type="button"
         onClick={toggle}
         aria-pressed={playing}
-        aria-label={failed ? "Music could not start. Tap to try again" : "Soft music"}
+        aria-label={failed ? "Music could not start. Tap to try again" : "Music: veena and flute"}
         className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-[70] grid size-12 place-items-center rounded-full bg-wine text-gold-soft shadow-[0_10px_24px_-10px_rgb(79_18_32/0.8)] transition-transform hover:scale-105 active:scale-95"
       >
         {playing && <span aria-hidden="true" className="absolute inset-0 animate-ping rounded-full bg-wine/40 [animation-duration:2.4s]" />}
         <Icon name={playing ? "music" : "musicOff"} className="relative size-[22px]" />
       </button>
-      <audio ref={audio} src={`${process.env.NEXT_PUBLIC_BASE_PATH}/media/soft-melody.mp3`} loop preload="none" onError={() => setFailed(true)} />
+      <audio ref={audio} src={`${process.env.NEXT_PUBLIC_BASE_PATH}/media/v2-kalam.mp3`} loop preload="none" onError={() => setFailed(true)} />
     </>
   );
 }

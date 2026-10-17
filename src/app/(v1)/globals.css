@@ -126,12 +126,6 @@
   /* oversized radii are scaled down together, leaving a true semicircular top */
   .arch { border-radius: 9999px 9999px 6px 6px; }
 
-  /* a real photograph set softly into a painting */
-  .vignette {
-    -webkit-mask-image: radial-gradient(closest-side, #000 55%, rgb(0 0 0 / 0.55) 78%, transparent 100%);
-    mask-image: radial-gradient(closest-side, #000 55%, rgb(0 0 0 / 0.55) 78%, transparent 100%);
-  }
-
   /* hand-painted art printed on white is laid onto the paper */
   .on-paper { mix-blend-mode: multiply; }
 
@@ -310,10 +304,6 @@ html[data-opened] .hero-copy, html[data-opening] .hero-copy { z-index: 61; }
   background: radial-gradient(closest-side, rgb(251 246 239 / 0.93), rgb(251 246 239 / 0.75) 58%, rgb(251 246 239 / 0) 100%);
 }
 /* the hero couple: a soft oval with a solid core, so both faces stay whole and only the edge dissolves */
-.hero-photo {
-  -webkit-mask-image: radial-gradient(closest-side, #000 68%, rgb(0 0 0 / 0.5) 86%, transparent 100%);
-  mask-image: radial-gradient(closest-side, #000 68%, rgb(0 0 0 / 0.5) 86%, transparent 100%);
-}
 /* painted scenes dissolve into the page at every edge instead of ending in a box */
 .feather {
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent), linear-gradient(transparent, #000 7%, #000 93%, transparent);

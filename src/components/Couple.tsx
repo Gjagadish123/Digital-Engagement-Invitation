@@ -9,7 +9,6 @@ function Person({ p }: { p: (typeof about)[number] }) {
       <p className="script text-[clamp(2.6rem,11vw,3.4rem)]">{p.name}</p>
       <p className="caps mt-2 text-[0.75rem]">{p.lines[0]}</p>
       <p className="mt-2 text-[1.125rem] text-ink">{p.lines[1]}</p>
-      <p className="text-[1.125rem] italic text-ink-soft">{p.lines[2]}</p>
     </div>
   );
 }

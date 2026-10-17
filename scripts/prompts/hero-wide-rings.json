@@ -1,0 +1,13 @@
+{
+  "model": "nano-banana-pro",
+  "input": {
+    "prompt": "Edit the first image, an exact watercolor painting of a Telugu wedding entrance, and keep all of it identical: the arch, mango-leaf toranam, marigold and jasmine garlands, banana plants, pillars, flower pots, rangoli, colours, soft linework and paper texture. Add only one thing: on the garden path just beneath the arch, in the lower middle of the picture, filling about a third of the picture's height, the same young couple as in the second image, painted in the same delicate storybook watercolor style as the entrance: she in a deep red silk saree with gold border and jasmine in her long braid, he in a cream kurta with glasses and a neat short beard, standing facing each other and exchanging rings, a gentle glow of light around their joined hands. Keep the upper half of the arch's open sky completely empty and pale, because names will be lettered there. Illustrated, not photographic. No text, no letters, no lamps, no candles, no diyas, no flames, no fire.",
+    "image_input": [
+      "https://tempfile.aiquickdraw.com/workers/images/image_43f4541217091a5f06a8fdd681dbe9ac.png",
+      "https://tempfile.aiquickdraw.com/workers/images/image_14d199040257640a8c60c3dfca54653a.png"
+    ],
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "output_format": "png"
+  }
+}

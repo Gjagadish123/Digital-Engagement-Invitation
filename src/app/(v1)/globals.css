@@ -303,7 +303,6 @@ html[data-opened] .hero-copy, html[data-opening] .hero-copy { z-index: 61; }
   pointer-events: none;
   background: radial-gradient(closest-side, rgb(251 246 239 / 0.93), rgb(251 246 239 / 0.75) 58%, rgb(251 246 239 / 0) 100%);
 }
-/* the hero couple: a soft oval with a solid core, so both faces stay whole and only the edge dissolves */
 /* painted scenes dissolve into the page at every edge instead of ending in a box */
 .feather {
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent), linear-gradient(transparent, #000 7%, #000 93%, transparent);

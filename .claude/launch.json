@@ -18,6 +18,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "3002", "--directory", "tmp/pages-site"],
       "port": 3002
+    },
+    {
+      "name": "invite-root",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "3003", "--directory", "out"],
+      "port": 3003
     }
   ]
 }

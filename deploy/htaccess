@@ -1,0 +1,19 @@
+# ravigirishma.in: the invitation as plain static files (Next.js export). Goes in public_html as .htaccess.
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# the calendar file opens in the phone's calendar app; images and music get their proper types
+AddType text/calendar .ics
+AddType image/webp .webp
+AddType audio/mpeg .mp3
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  # pages are always re-checked, so an update shows straight away
+  <FilesMatch "\.(html|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

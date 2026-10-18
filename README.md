@@ -20,6 +20,17 @@ npm run dev        # http://localhost:3000
 npm run build && npm start
 ```
 
+## Deploy (Hostinger, ravigirishma.in)
+
+The site is plain static files, so it goes straight into `public_html`:
+
+```bash
+MSYS_NO_PATHCONV=1 PAGES_BASE_PATH= SITE_URL=https://ravigirishma.in npm run build
+node scripts/pages-images.mjs
+```
+
+Then upload everything inside `out/` to `public_html`, plus `deploy/htaccess` renamed to `public_html/.htaccess` and `deploy/next-static-htaccess` renamed to `public_html/_next/static/.htaccess` (file types for the calendar and music, compression, long caching for hashed files). `hostinger-upload/` holds a ready-made copy of that folder and a zip of it after the last build.
+
 ## Deploy (GitHub Pages, live)
 
 Every push to `main` runs `.github/workflows/pages.yml`: a static export served from `https://<owner>.github.io/<repo>/`. The workflow sets `PAGES_BASE_PATH` (the repo sub-path) and `SITE_URL`, then `scripts/pages-images.mjs` writes the resized WebP images that a normal Next.js server would make on the fly. Watch a deploy under the repo's **Actions** tab.

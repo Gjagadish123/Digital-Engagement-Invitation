@@ -8,6 +8,7 @@ import glassBridge from "@/assets/photos/glass-bridge.jpg";
 import eveningWalk from "@/assets/photos/evening-walk.jpg";
 import yellowDupatta from "@/assets/photos/yellow-dupatta.jpg";
 import beachNight from "@/assets/photos/beach-night.jpg";
+import praveenPhoto from "@/assets/photos/praveen.jpg";
 
 export type Photo = { src: StaticImageData; alt: string };
 
@@ -52,6 +53,9 @@ export const photos = {
 } satisfies Record<string, Photo>;
 
 export type PhotoKey = keyof typeof photos;
+
+/** Praveen, for the special-blessing card in the closing (not part of the gallery). */
+export const praveen: Photo = { src: praveenPhoto, alt: "Praveen, smiling, in a printed kurta and glasses." };
 
 // All nine supplied photos (the brief asks for 8–12); add more here as the family shares them.
 export const gallery: PhotoKey[] = [

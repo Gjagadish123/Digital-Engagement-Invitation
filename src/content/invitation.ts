@@ -105,6 +105,14 @@ export const about = [
   { name: "Ravi", lines: ["Chartered Accountant", "Vizag", "Business enthusiast — financial markets"] },
 ];
 
+/** Added at the family's request on the day (2026-11-20); the words are a draft they chose for him. */
+export const specialBlessing = {
+  name: "Praveen",
+  words:
+    "Sai Girishma and Ravi, may the promise you make this morning grow into a lifetime of love, laughter and understanding. Wishing you both all the happiness in the world.",
+  wishTe: "శుభాకాంక్షలు!",
+};
+
 export const families = [
   // place corrected by the family on 2026-10-17 (the brief said Tenali)
   { side: "Bride’s family", names: ["Manga bai", "Bhikshalu"], place: "Vizag" },

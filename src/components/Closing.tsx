@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { art } from "@/content/art";
-import { blessing, couple, families, quotes } from "@/content/invitation";
+import { blessing, couple, families, quotes, specialBlessing } from "@/content/invitation";
+import { praveen } from "@/content/photos";
 import { Florals } from "./Florals";
 import { Sprig } from "./Ornament";
 import { ShareButton } from "./ShareButton";
@@ -21,6 +22,22 @@ export function Closing() {
 
         <p className="bloom mx-auto mt-6 max-w-[22ch] text-balance font-serif text-[clamp(1.5rem,6.4vw,2.1rem)] italic leading-[1.35] text-wine">{quotes.presence}</p>
         <Sprig className="mt-8" />
+
+        <section aria-labelledby="special-blessing-h" className="bloom mt-10">
+          <h2 id="special-blessing-h" className="caps">With the special blessings of</h2>
+          <div className="arch relative mx-auto mt-6 aspect-[4/5] w-[min(52vw,13rem)] overflow-hidden border border-gold/60 bg-[#fffaf3] p-[6px] shadow-[0_24px_44px_-26px_rgb(107_29_46/0.6)]">
+            <div className="arch relative size-full overflow-hidden">
+              <Image src={praveen.src} alt={praveen.alt} fill placeholder="blur" sizes="208px" className="object-cover object-[50%_30%]" />
+            </div>
+          </div>
+          <p className="script mt-4 text-[clamp(2.6rem,11vw,3.4rem)]">{specialBlessing.name}</p>
+          <blockquote className="mx-auto mt-2 max-w-[30ch] text-balance font-serif text-[1.25rem] italic leading-relaxed text-ink">
+            <p>
+              “{specialBlessing.words}” <span lang="te" className="not-italic text-wine">{specialBlessing.wishTe}</span>
+            </p>
+          </blockquote>
+        </section>
+        <Sprig className="mt-10" />
 
         <h2 className="caps mt-8">With best compliments from</h2>
         <ul className="mt-8 grid gap-10 md:grid-cols-2 md:gap-0 md:divide-x md:divide-gold/40">
